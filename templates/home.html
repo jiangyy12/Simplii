@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block content %}
-<button type="button" class="btn btn-outline-dark" style="margin-left: 20px;">Add New Task</button>
+<a type="button" class="btn btn-outline-dark" href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter" style="margin-left: 20px;">Add New Task</a>
 <center>
 
     <!-- This week tasks -->
@@ -61,29 +61,39 @@
                 <tr style="background-color: #D5D8DD;">
                     <th>Task</th>
                     <th data-sortable="true">Status</th>
-                    <th>Progress</th>
+                    <th>Category</th>
+                    <th>Due Date</th>
+                    <th>Edit</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Finalize Kickoff Materials</td>
                     <td style="background-color: lightgreen;">Done</td>
-                    <td>$1</td>
+                    <td>Development</td>
+                    <td>18th October, 2021</td>
+                    <td style="text-align: center;"><a href=""><i class="material-icons">edit</i></a></td>
                 </tr>
                 <tr>
                     <td>Refine Objectives</td>
-                    <td style="background-color: lightcoral;">Stuck</td>
-                    <td>$2</td>
+                    <td style="background-color: lightyellow;">Waiting</td>
+                    <td>Development</td>
+                    <td>18th October, 2021</td>
+                    <td style="text-align: center;"><a href=""><i class="material-icons">edit</i></a></td>
                 </tr>
                 <tr>
                     <td>Identify Key Sources</td>
                     <td style="background-color: lightcoral;">Stuck</td>
-                    <td>$1</td>
+                    <td>Refactoring</td>
+                    <td>18th October, 2021</td>
+                    <td style="text-align: center;"><a href=""><i class="material-icons">edit</i></a></td>
                 </tr>
                 <tr>
                     <td>Develop Communication Plan</td>
                     <td style="background-color: lightyellow;">Waiting</td>
-                    <td>$1</td>
+                    <td>Development</td>
+                    <td>18th October, 2021</td>
+                    <td style="text-align: center;"><a href=""><i class="material-icons">edit</i></a></td>
                 </tr>
 
             </tbody>
@@ -104,29 +114,39 @@
                 <tr style="background-color: #D5D8DD;">
                     <th>Task</th>
                     <th data-sortable="true">Status</th>
-                    <th>Progress</th>
+                    <th>Category</th>
+                    <th>Due Date</th>
+                    <th>Edit</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Finalize Kickoff Materials</td>
                     <td style="background-color: lightgreen;">Done</td>
-                    <td>$1</td>
+                    <td>Development</td>
+                    <td>18th October, 2021</td>
+                    <td style="text-align: center;"><a href=""><i class="material-icons">edit</i></a></td>
                 </tr>
                 <tr>
                     <td>Refine Objectives</td>
-                    <td style="background-color: lightcoral;">Stuck</td>
-                    <td>$2</td>
+                    <td style="background-color: lightyellow;">Waiting</td>
+                    <td>Development</td>
+                    <td>18th October, 2021</td>
+                    <td style="text-align: center;"><a href=""><i class="material-icons">edit</i></a></td>
                 </tr>
                 <tr>
                     <td>Identify Key Sources</td>
                     <td style="background-color: lightcoral;">Stuck</td>
-                    <td>$1</td>
+                    <td>Refactoring</td>
+                    <td>18th October, 2021</td>
+                    <td style="text-align: center;"><a href=""><i class="material-icons">edit</i></a></td>
                 </tr>
                 <tr>
                     <td>Develop Communication Plan</td>
                     <td style="background-color: lightyellow;">Waiting</td>
-                    <td>$1</td>
+                    <td>Development</td>
+                    <td>18th October, 2021</td>
+                    <td style="text-align: center;"><a href=""><i class="material-icons">edit</i></a></td>
                 </tr>
 
             </tbody>
@@ -136,4 +156,51 @@
         </div>
     </div>
 </center>
+
+<!-- Modal for new Task -->
+<div class="modal fade new-application-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">New Task</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body" style="text-align: left;">
+                <div class="form-group">
+                    <label for="taskName">Task Name</label>
+                    <input type="text" name="taskname" class="form-control" id="taskName" placeholder="Do Dishes" required="required">
+                </div>
+                <div class="form-group">
+                    <label for="Category" required="required">Category</label>
+                    <!-- This should be populated form the database -->
+                    <select class="form-control" aria-label="Default select example">
+                        <option value="Development">Development</option>
+                        <option value="Refactoring">Refactoring</option>
+                        <option value="Enhancement">Enhancement</option>
+                        <option value="UI/UX">UI/UX</option>
+                        <option value="Other">Other</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label for="startDate">Start Date</label>
+                    <input class="form-control" name="starting_date" type="date" value="2021-11-01" id="example-date-input">
+                </div>
+                <div class="form-group">
+                    <label for="dueDate">Due Date</label>
+                    <input class="form-control" name="due_date" type="date" value="2021-11-01" id="example-date-input">
+                </div>
+                <div class="form-group">
+                    <label for="hours">Hours</label>
+                    <input type="number" name="hours" class="form-control" id="hours" placeholder="Number of Hours">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}
