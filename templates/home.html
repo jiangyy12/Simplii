@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>WolfTrack - Home</title>
+<title>Simplii</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -70,26 +70,32 @@
                             </div>
                         </div>
                     </div>
-
+                    <br>
+                    <button type="button" class="btn btn-outline-primary">Change Preferences</button>
                     <br><br>
+
                 </center>
 
             </div>
 
             <!-- Content -->
             <div class="col-sm-9 text-left main-content">
+                <button type="button" class="btn btn-outline-dark" style="margin-left: 20px;">Add New Task</button>
                 <center>
+
+                    <!-- This week tasks -->
                     <div class="card status-card col-md" style="width: auto;">
                         <i class="material-icons card-icons">schedule</i>
                         <div class="card-body">
                             <h5 class="card-title">This Week</h5>
                         </div>
-                        <table data-toggle="table" data-flat="true" data-search="true" data-virtual-scroll="true" data-height="305">
+                        <table data-toggle="table" data-flat="true" data-search="true">
                             <thead>
-                                <tr>
+                                <tr style="background-color: #D5D8DD; text-align: center;">
                                     <th>Task</th>
-                                    <th>Status</th>
+                                    <th data-sortable="true">Status</th>
                                     <th>Category</th>
+                                    <th>Edit</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -97,21 +103,25 @@
                                     <td>Finalize Kickoff Materials</td>
                                     <td style="background-color: lightgreen;">Done</td>
                                     <td>Development</td>
+                                    <td><i class="material-icons">edit</i></td>
                                 </tr>
                                 <tr>
                                     <td>Refine Objectives</td>
                                     <td style="background-color: lightyellow;">Waiting</td>
                                     <td>Development</td>
+                                    <td><i class="material-icons">edit</i></td>
                                 </tr>
                                 <tr>
                                     <td>Identify Key Sources</td>
                                     <td style="background-color: lightcoral;">Stuck</td>
                                     <td>Refactoring</td>
+                                    <td><i class="material-icons">edit</i></td>
                                 </tr>
                                 <tr>
                                     <td>Develop Communication Plan</td>
                                     <td style="background-color: lightyellow;">Waiting</td>
                                     <td>Development</td>
+                                    <td><i class="material-icons">edit</i></td>
                                 </tr>
 
                             </tbody>
@@ -121,6 +131,50 @@
                         </div>
                     </div>
 
+                    <!-- Backlog -->
+                    <div class="card status-card col-md" style="width: auto;">
+                        <i class="material-icons card-icons">low_priority</i>
+                        <div class="card-body">
+                            <h5 class="card-title">Backlog</h5>
+                        </div>
+                        <table data-toggle="table" data-flat="true" data-search="true" data-virtual-scroll="true" data-height="305">
+                            <thead>
+                                <tr style="background-color: #D5D8DD;">
+                                    <th>Task</th>
+                                    <th data-sortable="true">Status</th>
+                                    <th>Progress</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Finalize Kickoff Materials</td>
+                                    <td style="background-color: lightgreen;">Done</td>
+                                    <td>$1</td>
+                                </tr>
+                                <tr>
+                                    <td>Refine Objectives</td>
+                                    <td style="background-color: lightcoral;">Stuck</td>
+                                    <td>$2</td>
+                                </tr>
+                                <tr>
+                                    <td>Identify Key Sources</td>
+                                    <td style="background-color: lightcoral;">Stuck</td>
+                                    <td>$1</td>
+                                </tr>
+                                <tr>
+                                    <td>Develop Communication Plan</td>
+                                    <td style="background-color: lightyellow;">Waiting</td>
+                                    <td>$1</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <div class="card-body">
+                            <a href="/view?show=in_progress" class="card-link">View More</a>
+                        </div>
+                    </div>
+
+                    <!-- Next Week Tasks -->
                     <div class="card status-card col-md" style="width: auto;">
                         <i class="material-icons card-icons">timelapse</i>
                         <div class="card-body">
