@@ -80,58 +80,57 @@
             <div class="col-sm-9 text-left main-content">
                 <center>
                     <div class="card status-card col-md" style="width: auto;">
-                        <i class="material-icons card-icons">trending_up</i>
+                        <i class="material-icons card-icons">schedule</i>
                         <div class="card-body">
                             <h5 class="card-title">This Week</h5>
                         </div>
-                        <table data-toggle="table" data-flat="true" data-search="true">
+                        <table data-toggle="table" data-flat="true" data-search="true" data-virtual-scroll="true" data-height="305">
                             <thead>
                                 <tr>
                                     <th>Task</th>
                                     <th>Status</th>
-                                    <th>Progress</th>
+                                    <th>Category</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>Finalize Kickoff Materials</td>
                                     <td style="background-color: lightgreen;">Done</td>
-                                    <td>$1</td>
+                                    <td>Development</td>
                                 </tr>
                                 <tr>
                                     <td>Refine Objectives</td>
-                                    <td>Item 2</td>
-                                    <td>$2</td>
+                                    <td style="background-color: lightyellow;">Waiting</td>
+                                    <td>Development</td>
                                 </tr>
                                 <tr>
                                     <td>Identify Key Sources</td>
                                     <td style="background-color: lightcoral;">Stuck</td>
-                                    <td>$1</td>
+                                    <td>Refactoring</td>
                                 </tr>
                                 <tr>
                                     <td>Develop Communication Plan</td>
                                     <td style="background-color: lightyellow;">Waiting</td>
-                                    <td>$1</td>
+                                    <td>Development</td>
                                 </tr>
 
                             </tbody>
                         </table>
                         <div class="card-body">
-                            <a href="/view?show=in_progress" class="card-link">View More</a>
-                            <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
+                            <a href="/view?show=in_progress" class="card-link">View All</a>
                         </div>
                     </div>
 
                     <div class="card status-card col-md" style="width: auto;">
-                        <i class="material-icons card-icons">trending_up</i>
+                        <i class="material-icons card-icons">timelapse</i>
                         <div class="card-body">
                             <h5 class="card-title">Next Week</h5>
                         </div>
-                        <table data-toggle="table" data-flat="true" data-search="true">
+                        <table data-toggle="table" data-flat="true" data-search="true" data-virtual-scroll="true" data-height="305">
                             <thead>
-                                <tr>
+                                <tr style="background-color: #D5D8DD;">
                                     <th>Task</th>
-                                    <th>Status</th>
+                                    <th data-sortable="true">Status</th>
                                     <th>Progress</th>
                                 </tr>
                             </thead>
@@ -143,7 +142,7 @@
                                 </tr>
                                 <tr>
                                     <td>Refine Objectives</td>
-                                    <td>Item 2</td>
+                                    <td style="background-color: lightcoral;">Stuck</td>
                                     <td>$2</td>
                                 </tr>
                                 <tr>
@@ -161,7 +160,6 @@
                         </table>
                         <div class="card-body">
                             <a href="/view?show=in_progress" class="card-link">View More</a>
-                            <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter">Add New</a>
                         </div>
                     </div>
                 </center>
