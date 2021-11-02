@@ -53,3 +53,7 @@ Maintain the projects quality
 Fix problems that are important to users
 
 Enable a sustainable system for the projects maintainers to review contributions
+
+Unit testing should be done before raising a pull request
+
+Provide the unit testing description in the PR details
