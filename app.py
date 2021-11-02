@@ -94,6 +94,11 @@ def view_all_tasks():
     """This function renders the edit task page."""
     return render_template("view_all_tasks.html", data=refresh_data())
 
+@app.route("/user_details")
+def user_details():
+    """This function renders the edit task page."""
+    return render_template("view_user_details.html", data=refresh_data())
+
 
 @app.route("/update_user_info", methods = ["POST"])
 def update_user_information():
