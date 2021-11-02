@@ -1,7 +1,7 @@
 # Simplii
 **Task Scheduler Web App**
 
-[![DOI](https://zenodo.org/badge/404911045.svg)](https://zenodo.org/badge/latestdoi/404911045)
+[![DOI](https://zenodo.org/badge/419134447.svg)](https://zenodo.org/badge/latestdoi/419134447)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![GitHub issues](https://img.shields.io/github/issues-raw/ivbhatt/Simplii)
 ![Github closes issues](https://img.shields.io/github/issues-closed-raw/ivbhatt/Simplii)
