@@ -7,11 +7,14 @@ task = task_model()
 
 @tasks.route('', methods=['GET'])
 def get_tasks():
-    if 'THIS WEEK' in request.json:
+    if 'period' not in request.json:
+        return 'Need time period to fetch tasks!'
+
+    if request.json['period'] == 'THIS WEEK':
         return task.get_this_week_tasks()
-    if 'BACKLOG' in request.json:
+    if request.json['period'] == 'BACKLOG':
         return task.get_backlog()
-    if 'FUTURE TASKS' in request.json:
+    if request.json['period'] == 'FUTURE TASKS':
         return task.get_future_tasks()
 
 
