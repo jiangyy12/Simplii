@@ -17,7 +17,6 @@ def get_tasks():
     if request.json['period'] == 'FUTURE TASKS':
         return task.get_future_tasks()
 
-
 @tasks.route('', methods=['POST'])
 def create_task():
     data = request.form
