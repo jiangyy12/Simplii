@@ -99,6 +99,11 @@ def user_details():
     """This function renders the edit task page."""
     return render_template("view_user_details.html", data=refresh_data())
 
+@app.route("/login")
+def login():
+    """This function renders the edit task page."""
+    return render_template("login.html", data=refresh_data())
+
 
 @app.route("/update_user_info", methods = ["POST"])
 def update_user_information():
