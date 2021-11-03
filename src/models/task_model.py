@@ -1,8 +1,8 @@
 import pandas as pd
-from connect_db import connect_db
+from sql_helper import sql_helper
 from datetime import datetime, timedelta
 
-con = connect_db()
+con = sql_helper()
 
 class task_model:
     def __init__(self):
