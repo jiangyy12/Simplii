@@ -1,5 +1,5 @@
 import pandas as pd
-from sql_helper import sql_helper
+from src.models.sql_helper import sql_helper
 from datetime import datetime, timedelta
 
 con = sql_helper()
@@ -38,11 +38,28 @@ class task_model:
     def create_tasks(self, data):
         columns = ''
         values = ''
-        for key, value in data:
+        for key, value in data.items():
             columns += str(key)+', '
-            values += str(value)+', '
+            values += "'"+str(value)+"', "
 
-        query = "INSERT INTO tasks ("+columns[:-2]+" ) VALUES"+ values[:-2]+" );"
+        query = "INSERT INTO tasks ("+columns[:-2]+" ) VALUES (" + values[:-2]+" );"
+        con.run_query(query)
+        return
+
+    def delete_task(self, taskid):
+        query = "DELETE FROM tasks WHERE Taskid ="+ taskid
+        con.run_query(query)
+
+    def get_task_by_id(self, taskid):
+        query = "SELECT * FROM tasks WHERE Taskid =" + taskid
         result = con.run_query(query)
         return result.to_dict('records')
+
+    def update_task(self, data):
+        values = ''
+        for key, value in data.items():
+            values += str(key)+"= '"+str(value)+"', "
+        query = "UPDATE tasks SET "+values[:-2]+";"
+        con.run_query(query)
+        return
 
