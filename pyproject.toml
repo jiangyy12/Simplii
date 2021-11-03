@@ -1,0 +1,39 @@
+[project]
+name = "simplii"
+version = "0.2.0"
+description = "Manage tasks with ease."
+authors = [
+    "Suraj Devatha",
+    "Himanshu Gupta"
+]
+license = "MIT"
+readme = "README.md"
+python = "^3.6"
+homepage = "https://github.com/Himanshuu-Gupta/Simplii"
+repository = "https://github.com/Himanshuu-Gupta/Simplii"
+documentation = "https://github.com/Himanshuu-Gupta/Simplii"
+
+classifiers = [
+    "Topic :: Software Development"
+]
+
+[tool.black]
+line-length = 88
+target_version = ['py36']
+exclude = '''
+
+(
+  /(
+      \.eggs         # exclude a few common directories in the
+    | \.git          # root of the project
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+  )/
+)
+'''
