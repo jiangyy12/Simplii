@@ -29,7 +29,7 @@ class FlaskTest(unittest.TestCase):
     def test_index_data(self):
         tester = app.test_client(self)
         response = tester.get("/login")
-        self.assertEqual(b'WolfTrack' in response.data, True)
+        self.assertEqual(b'Simplii' in response.data, True)
 
 if __name__=="__main__":
      unittest.main()
