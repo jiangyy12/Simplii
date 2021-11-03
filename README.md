@@ -3,11 +3,12 @@
 
 [![DOI](https://zenodo.org/badge/419134447.svg)](https://zenodo.org/badge/latestdoi/419134447)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![GitHub issues](https://img.shields.io/github/issues-raw/ivbhatt/Simplii)
-![Github closes issues](https://img.shields.io/github/issues-closed-raw/ivbhatt/Simplii)
-![Github pull requests](https://img.shields.io/github/issues-pr/ivbhatt/Simplii)
+![GitHub issues](https://img.shields.io/github/issues-raw/Himanshuu-Gupta/Simplii)
+![Github closes issues](https://img.shields.io/github/issues-closed-raw/Himanshuu-Gupta/Simplii)
+![Github pull requests](https://img.shields.io/github/issues-pr/Himanshuu-Gupta/Simplii)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Build Status](https://app.travis-ci.com/UnnatiPrema/Simplii.svg?branch=main)](https://app.travis-ci.com/UnnatiPrema/Simplii)
+
 ## Why schedule tasks on this app?
 
 Do you feel that your basic task scheduling apps should also track your mood and suggest a task accordingly? We hear it. We are trying to build a tool that will enable fast execution of our tasks under any mood. `Simplii` parameterizes emotions, deadlines, task difficulty and moods to suggest a task to be done keeping you at your productive best.
@@ -63,6 +64,9 @@ ER Diagram                 |  Application Flowchart
     - Run `flask run`
     - Site will be hosted at:
       `http://127.0.0.1:5000/`
+      
+## :page_facing_up: License <a name="License"></a>
+This project is licensed under the terms of the MIT license. Please check [License](https://github.com/Himanshuu-Gupta/Simplii/blob/main/LICENSE) for more details.
 
 ## Chat Channel
 <code><a href="https://discord.gg/wRZ56mvA" target="_blank"><img height="100" width="250" src="https://user-images.githubusercontent.com/42767118/135394825-26dee6db-7a64-4e3f-902a-1e35abd4cf0c.png"></a></code>
