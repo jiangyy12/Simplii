@@ -64,6 +64,9 @@ ER Diagram                 |  Application Flowchart
     - Site will be hosted at:
       `http://127.0.0.1:5000/`
 
+## Chat Channel
+<code><a href="https://discord.gg/wRZ56mvA" target="_blank"><img height="100" width="250" src="https://user-images.githubusercontent.com/42767118/135394825-26dee6db-7a64-4e3f-902a-1e35abd4cf0c.png"></a></code>
+
 ## Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii/blob/main/CONTRIBUTING.md) if you want to contrbute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
@@ -81,5 +84,5 @@ Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii
 </center>
 
 ## Support
-For any queries and help, please reach out to us at: krishika510@gmail.com
+For any queries and help, please reach out to us at: aunayak@ncsu.edu
 
