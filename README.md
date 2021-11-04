@@ -11,7 +11,8 @@
 
 ## Why use Simplii?
 
-Planning ahead has never been "Simplii"er! Ever felt that your day went by not as productively as you'd wish? We hear you! With Simplii, you can schedule your tasks and concentrate your efforts to reflect your mood. Our tool enables the user to efficiently multi-task or switch tasks based on mood to provide a customized user experience while completing routine tasks. `Simplii` parameterizes emotions, deadlines, task difficulty and moods to suggest a task to be done keeping you at your productive best.
+Planning ahead has never been "Simpl"er! 
+Ever felt that your day went by not as productively as you'd wish? We hear you! With Simplii, you can schedule your tasks and prioritize your efforts based on how you are feeling. Our tool enables the user to efficiently multi-task or switch tasks based on mood to provide a customized user experience while completing routine tasks. `Simplii` parameterizes emotions, deadlines, task difficulty and moods to suggest a task to be done keeping you at your productive best.
 
 ## Visual Walkthrough:
 
@@ -85,7 +86,7 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 ## Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii/blob/main/CONTRIBUTING.md) if you want to contrbute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
-## Contributors
+## Contributors of Round 2
 <center>
   <table>
   <tr>
@@ -96,6 +97,19 @@ Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii
     <td align="center"><a href="https://github.com/ShreyanshPrajapati/"><img src="https://avatars.githubusercontent.com/u/13018358?v=4" width="100px;" alt=""/><br /><sub><b>Shreyansh Prajapati</b></sub></a><br /></td>
   </tr>
 </table>
+</center>
+
+## Contributors of Round 1
+<center>
+  <table>
+    <tr>
+        <td align="center"><a href="https://github.com/apurva-s"><img src="https://avatars.githubusercontent.com/u/32777604?v=4" width="100px;" alt=""/><br /><sub><b>Apurva Sonavane</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/ArpithaVijayakumar/"><img src="https://avatars.githubusercontent.com/u/45428701?s=400&u=15851f4800b87dcd2b8cbf9ff0a040bc8987e7c0&v=4" width="100px;" alt=""/><br /><sub><b>Arpitha Vijayakumar</b></sub></a></td>
+    <td align="center"><a href="https://github.com/ivbhatt"><img src="https://avatars.githubusercontent.com/u/20361038?v=4" width="100px;" alt=""/><br /><sub><b>Ishan Bhatt</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/Krishika510"><img src="https://avatars.githubusercontent.com/u/17769434?v=4" width="100px;" alt=""/><br /><sub><b>Krishika Shivnani</b></sub></a><br /></td>
+      <td align="center"><a href="https://github.com/UnnatiPrema/"><img src="https://avatars.githubusercontent.com/u/24750759?s=400&u=ab27d86edc758ff53bd68808430d8e5bf172e34a&v=4" width="100px;" alt=""/><br /><sub><b>Unnati Nadupalli</b></sub></a><br /></td>
+    </tr>
+  </table>
 </center>
 
 ## Support
