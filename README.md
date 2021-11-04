@@ -11,6 +11,7 @@
 ![Github pull requests](https://img.shields.io/github/issues-pr/Himanshuu-Gupta/Simplii)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Build Status](https://app.travis-ci.com/Himanshuu-Gupta/Simplii.svg?branch=main)](https://app.travis-ci.com/Himanshuu-Gupta/Simplii)
+[![codecov](https://codecov.io/gh/Himanshuu-Gupta/Simplii/branch/main/graph/badge.svg?token=GWJMXVPNBY)](https://codecov.io/gh/Himanshuu-Gupta/Simplii)
 
 ## Why use Simplii?
 
