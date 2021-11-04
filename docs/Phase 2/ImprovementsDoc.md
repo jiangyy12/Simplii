@@ -29,20 +29,12 @@ The original version after Phase 1 was not hosted on a backend. Our team strived
 
 Phase 1                    |  Phase 2
 :-------------------------:|:-------------------------:
-No Signup page             |  <img src="https://user-images.githubusercontent.com/18304940/140264522-ef073322-e3fe-48f6-b785-9688c1225f61.jpeg" width="500"/>
-No Login page              |  <img src="https://user-images.githubusercontent.com/18304940/140264509-c19cb558-a9b2-462f-94d7-0aea4a9fb601.jpeg" width="500" />
+No Signup page             |  New Signup page <img src="https://user-images.githubusercontent.com/18304940/140264522-ef073322-e3fe-48f6-b785-9688c1225f61.jpeg" width="500"/>
+No Login page              |  New Login page <img src="https://user-images.githubusercontent.com/18304940/140264509-c19cb558-a9b2-462f-94d7-0aea4a9fb601.jpeg" width="500" />
 <img src="https://github.com/ivbhatt/Simplii/blob/main/docs/Screenshot_Header.PNG" width="250" /><img src="https://github.com/ivbhatt/Simplii/blob/main/docs/Task%20list%20Screenshot.PNG" width="250" /> | <img src="https://user-images.githubusercontent.com/18304940/140264482-49072881-6613-4e57-a6d2-bfc7960a39bc.jpeg" width="500" />
-All tasks not displayed    |  <img src="https://user-images.githubusercontent.com/18304940/140264503-6019577d-bfae-4592-b935-1d8a497bcc87.jpeg" width="500" />
+All tasks not displayed    |  All tasks displayed included completed ones <img src="https://user-images.githubusercontent.com/18304940/140264503-6019577d-bfae-4592-b935-1d8a497bcc87.jpeg" width="500" />
+Simple task adding functionality in main page.    | Pop-up form to add tasks to pipeline. <img src="https://user-images.githubusercontent.com/18304940/140264497-c547ed7a-0b67-4f09-b87c-884e3039a462.jpeg" width="500"  />
+No deadline based buckets  |  Deadline based categories - "This week", "Backlog" and "Future Tasks"<img src="https://user-images.githubusercontent.com/18304940/140264488-94925f49-3b8e-48c1-8a8f-1083e26cbe69.jpeg" width="500" />
 
-
-
-
-
-
-- **Add New Tasks** 
-  - User interface for adding a new tasks to the portal
-<img src="https://user-images.githubusercontent.com/18304940/140264497-c547ed7a-0b67-4f09-b87c-884e3039a462.jpeg" width="500"  />
-
-
-
-<img src="https://user-images.githubusercontent.com/18304940/140264488-94925f49-3b8e-48c1-8a8f-1083e26cbe69.jpeg" width="500" />
+## Conclusion of Phase 2
+Working on Phase 2 was an eye-opening simulation of how Software Engineering project development occurs in the real world. Countless brainstorming sessions to whip up a myriad of creative ideas which we brought to fruition, in short, the Phase 2 sojourn was a memorable learning experience. We would like to thank Dr. Timothy Menzies for helping us understand the process of building a good Software Engineering project. We would also like to thank the teaching assistants Xiao Ling, Andre Lustosa, Kewen Peng, Weichen Shi for their support throughout the project. We are grateful for the opportunity to work with our friends and colleagues at NCSU - shout out to the original developers Ishaan, Arpitha, Krishika, Unnati and Apurva for their amazing project in Phase 1!
