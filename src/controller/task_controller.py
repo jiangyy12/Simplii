@@ -4,6 +4,7 @@ from src.models.task_model import task_model
 tasks = Blueprint('tasks', __name__, url_prefix='/tasks')
 task = task_model()
 
+@tasks.route('', methods=['GET'])
 def get_tasks():
     if 'period' not in request.form:
         return 'Need time period to fetch tasks!'
@@ -26,7 +27,7 @@ def delete_task():
     task.delete_task(taskid)
     return 'Task Deleted', 200
 
-@tasks.route('', methods=['POST'])
+@tasks.route('/update', methods=['POST'])
 def update_task():
     data = request.form
     task.update_task(data)
