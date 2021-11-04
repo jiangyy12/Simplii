@@ -9,11 +9,8 @@ class task_model:
         pass
 
     def get_all_taks():
-        current_date = date.today()
-        #dt = datetime.strptime(current_date, '%d/%b/%Y')
-        #start_date = dt - timedelta(days=dt.weekday())
-        #end_date = start_date + timedelta(days=6)
-        query = "SELECT *, Categories.Category_name FROM Tasks JOIN Categories ON Tasks.Category= Categories.Category_ID WHERE ("+" Startdate >="+str(current_date)+')'
+        query = "SELECT *, Categories.Category_name, DATE(Startdate), DATE(Duedate) FROM Tasks JOIN Categories ON Tasks.Category= Categories.Category_ID"
+        print(query)
         result = con.run_query(query)
         result = pd.DataFrame(list(result))
         return result.to_dict('records')
@@ -24,7 +21,7 @@ class task_model:
         dt = current_date
         start_date = dt - timedelta(days=dt.weekday())
         end_date = start_date + timedelta(days=6)
-        query = "SELECT *, Categories.Category_name, DATE(Duedate) FROM Tasks JOIN Categories ON Tasks.Category= Categories.Category_ID WHERE (Startdate <='"+str(end_date)+"' AND Duedate >='"+str(start_date)+'\')'
+        query = "SELECT *, Categories.Category_name FROM Tasks JOIN Categories ON Tasks.Category= Categories.Category_ID WHERE (Startdate <='"+str(end_date)+"' AND Duedate >='"+str(start_date)+'\')'
         result = con.run_query(query)
         result = pd.DataFrame(list(result))
         return result.to_dict('records')

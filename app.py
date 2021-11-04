@@ -100,8 +100,10 @@ def edit_task():
 
 @app.route("/view_all_tasks")
 def view_all_tasks():
+    all_tasks = task_model.task_model.get_all_taks()
+    print(all_tasks)
     """This function renders the edit task page."""
-    return render_template("view_all_tasks.html", data=refresh_data())
+    return render_template("view_all_tasks.html", all_tasks = all_tasks)
 
 @app.route("/user_details")
 def user_details():
