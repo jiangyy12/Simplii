@@ -11,7 +11,8 @@ The original version did not have a login or signup page. The tasks were display
 3) Improved existing UI for viewing all tasks. 
 4) Made the user experience more insightful by dividing the tasks based on deadlines into "This week", "Backlog" and "Future Tasks".
 5) Created a screen pop-up form for the feature of adding tasks to the pipeline. Also, incorporated an edit button for the same.
-6) Color-coded the progress of tasks to make the experience more user friendly. At a glance, the user can now understand the overall progress of his or her tasks. The color scheme that dipicts this:
+6) Created a Search bar to find tasks easily.
+7) Color-coded the progress of tasks to make the experience more user friendly. At a glance, the user can now understand the overall progress of his or her tasks. The color scheme that dipicts this:
     - Red indicates Stuck - This could be the result of a bottleneck in the pipeline or the likes.
     - Blue indicates In Progress - This shows the tasks that are currently been pursued.
     - Yellow indicates Waiting - This usually happens when there exists a dependency on someone else to complete the task. For example, if the user wishes the task to be reviewed by someone before marking it as complete.
@@ -36,6 +37,9 @@ All tasks not displayed    |  All tasks displayed included completed ones <img s
 Simple task adding functionality in main page.    | Pop-up form to add tasks to pipeline. <img src="https://user-images.githubusercontent.com/18304940/140264497-c547ed7a-0b67-4f09-b87c-884e3039a462.jpeg" width="500"  />
 No deadline based buckets  |  Deadline based categories - "This week", "Backlog" and "Future Tasks"<img src="https://user-images.githubusercontent.com/18304940/140264488-94925f49-3b8e-48c1-8a8f-1083e26cbe69.jpeg" width="500" />
 Phase 1 ER <img src="https://github.com/ivbhatt/Simplii/blob/main/docs/architectureImages/SE_ERDiagram.png" width="500" height="350" />  | Phase 2 ER <br><img src="https://github.com/Himanshuu-Gupta/Simplii/blob/main/docs/Phase%202/DB_Schema.jpeg" width="500" height="350" />
+
+## Tools used
+The original team used Python, HTML, CSS, Bootstrap, JQuery, Javascript, Flask.In addition to these, we have used MySQL, AWS RDS and Python Jinja.
 
 ## Conclusion of Phase 2
 Working on Phase 2 was an eye-opening simulation of how Software Engineering project development occurs in the real world. Countless brainstorming sessions to whip up a myriad of creative ideas which we brought to fruition, in short, the Phase 2 sojourn was a memorable learning experience. We would like to thank Dr. Timothy Menzies for helping us understand the process of building a good Software Engineering project. We would also like to thank the teaching assistants Xiao Ling, Andre Lustosa, Kewen Peng, Weichen Shi for their support throughout the project. We are grateful for the opportunity to work with our friends and colleagues at NCSU - shout out to the original developers Ishaan, Arpitha, Krishika, Unnati and Apurva for their amazing project in Phase 1!
