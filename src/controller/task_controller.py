@@ -1,4 +1,4 @@
-from flask import Blueprint, request
+from flask import Blueprint, request, redirect
 from src.models.task_model import task_model
 
 tasks = Blueprint('tasks', __name__, url_prefix='/tasks')
@@ -19,7 +19,7 @@ def get_tasks():
 def create_task():
     data = request.form
     task.create_tasks(data)
-    return 'Task created succesfully!', 200
+    return redirect('/')
 
 @tasks.route('', methods=['DELETE'])
 def delete_task():
