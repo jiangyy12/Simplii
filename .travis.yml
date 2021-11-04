@@ -15,3 +15,5 @@ install:
 # command to run tests
 script:
   - python ./UnitTests/database_connection_test.py
+  - python ./UnitTests/database_crud_test.py
+  - python ./UnitTests/database_tables_test.py
