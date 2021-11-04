@@ -9,6 +9,10 @@ from flask import Flask
 from flask import render_template
 from flask import request, redirect
 
+import src.models.task_model as task_model
+
+from src.controller.task_controller import tasks
+
 
 app = Flask(__name__)
 
@@ -81,8 +85,11 @@ def getnewTaskID():
 
 @app.route("/")
 def homePage():
+    this_week_tasks = task_model.task_model.get_this_week_tasks()
+    backlog_tasks = task_model.task_model.get_backlog()
+    future_tasks = task_model.task_model.get_future_tasks()
     """This function renders the home page."""
-    return render_template("home.html", data=refresh_data())
+    return render_template("home.html", data=refresh_data(), this_week_tasks = this_week_tasks, backlog_tasks = backlog_tasks, future_tasks = future_tasks)
 
 @app.route("/edit_task")
 def edit_task():
@@ -182,4 +189,6 @@ def delete_task_byID():
     return redirect("/")
 
 if __name__ == "__main__":
+    app.register_blueprint(tasks)
     app.run(debug = True)
+
