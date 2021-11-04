@@ -1,4 +1,8 @@
-Flask==2.1.1
-Jinja2==3.0.1
-MarkupSafe==2.0.1
-Werkzeug==2.0.1
+#requirements
+flask
+flask_restful
+pymysql
+flask_login
+jinja2
+MarkupSafe
+Werkzeug
