@@ -9,13 +9,14 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Build Status](https://app.travis-ci.com/UnnatiPrema/Simplii.svg?branch=main)](https://app.travis-ci.com/UnnatiPrema/Simplii)
 
-## Why schedule tasks on this app?
+## Why use Simplii?
 
-Do you feel that your basic task scheduling apps should also track your mood and suggest a task accordingly? We hear it. We are trying to build a tool that will enable fast execution of our tasks under any mood. `Simplii` parameterizes emotions, deadlines, task difficulty and moods to suggest a task to be done keeping you at your productive best.
+Planning ahead has never been "Simplii"er! Ever felt that your day went by not as productively as you'd wish? We hear you! With Simplii, you can schedule your tasks and concentrate your efforts to reflect your mood. Our tool enables the user to efficiently multi-task or switch tasks based on mood to provide a customized user experience while completing routine tasks. `Simplii` parameterizes emotions, deadlines, task difficulty and moods to suggest a task to be done keeping you at your productive best.
 
 ## Visual Walkthrough:
 
-https://user-images.githubusercontent.com/17769434/135383467-e197d4ca-74f8-4737-a979-4390026cb71d.mp4
+https://user-images.githubusercontent.com/18304940/140261087-6491c967-fe11-469f-9718-ca241b690bce.mp4
+
 
 ## Built with:
 <table border = "0px">
