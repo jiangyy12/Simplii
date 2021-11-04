@@ -66,27 +66,40 @@ ER Diagram                 |  Application Flowchart
 
 <img src="https://user-images.githubusercontent.com/18304940/140264488-94925f49-3b8e-48c1-8a8f-1083e26cbe69.jpeg" width="1000"/>
 
-## Getting Started: 
-- ### Prerequisite:
-  - Download [Python3.x](https://www.python.org/downloads/) on your system.
 
-- ### Installation: 
-  E.g If you downloaded `Python 3.9.7` above, then
+## Getting started:
+
+  - ### Prerequisite:
+      - Download [Python3.x](https://www.python.org/downloads/).
+
+   - ### Installation:
+      E.g If you downloaded `Python 3.8.7` above, then
+
+      **Steps to setup virtual environment**
+     - Create a virtual environment:
+
+        `python3.8 -m venv test_env`
+    
+     - Activate the virtual environment: 
+
+        `source test_env/bin/activate`
+    
+     - Build the virtual environment:(must be present in [project directory](./))
+
+        `pip install -r requirements.txt`
+
+  - ### Run Instructions
+
+     **To run/test the site locally:**
+
+     - Clone [Simplii github repo](https://github.com/Himanshuu-Gupta/Simplii/).
+
+     - Navigate to [project directory](./).
   
-  **Steps to setup virtual environment**
-  - Create a virtual environment using
-    `python 3.9 -m venv project_venv`
-  - Activate the virtual environment 
-    `source project_venv/bin/activate`
-  - Build the virtual environment:(must be present in project directory)
-    `pip install -r requirements.txt`
-  
-- ### How to Run:
-    **To run the application locally:**
-    - Clone [this (Simplii) github repo](https://github.com/Himanshuu-Gupta/Simplii)
-    - Run `flask run`
-    - Site will be hosted at:
-      `http://127.0.0.1:5000/`
+     - Run `python app.py` or `python3 app.py`
+
+     - Site will be hosted at:
+       `http://127.0.0.1:5000/`
 
 ## Third-Party Tools
 
