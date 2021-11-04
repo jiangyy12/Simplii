@@ -20,7 +20,6 @@ https://user-images.githubusercontent.com/17769434/135383467-e197d4ca-74f8-4737-
 ## Built with:
 <table border = "0px">
   <tr>
-**Built Using:**
 
 <code><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"></a></code>
 <code><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg"></a></code>
@@ -66,7 +65,7 @@ ER Diagram                 |  Application Flowchart
   
 - ### How to Run:
     **To run the application locally:**
-    - Clone [this (Simplii) github repo] (https://github.com/ivbhatt/Simplii)
+    - Clone [this (Simplii) github repo](https://github.com/Himanshuu-Gupta/Simplii)
     - Run `flask run`
     - Site will be hosted at:
       `http://127.0.0.1:5000/`
