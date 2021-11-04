@@ -6,7 +6,7 @@ class Database_Connection_Test(unittest.TestCase):
         sqlObj = sql_helper()
         tables = sqlObj.run_query("Show tables")
         print(tables)
-        self.assertEqual(tables != None, True)
+        self.assertTrue(tables != None)
 
 if __name__ == "__main__":
     unittest.main()
