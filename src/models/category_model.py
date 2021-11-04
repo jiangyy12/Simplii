@@ -4,9 +4,6 @@ from sql_helper import sql_helper
 
 con = sql_helper()
 class category_model:
-    def __init__(self):
-        pass
-
     def create_category(self, data):
         columns = ''
         values = ''
