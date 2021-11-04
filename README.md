@@ -64,7 +64,8 @@ ER Diagram                 |  Application Flowchart
 
 <img src="https://user-images.githubusercontent.com/18304940/140264482-49072881-6613-4e57-a6d2-bfc7960a39bc.jpeg" width="1000"/>
 
-![WhatsApp Image 2021-11-04 at 1 46 27 AM (1)](https://user-images.githubusercontent.com/18304940/140264488-94925f49-3b8e-48c1-8a8f-1083e26cbe69.jpeg)
+<img src="https://user-images.githubusercontent.com/18304940/140264488-94925f49-3b8e-48c1-8a8f-1083e26cbe69.jpeg" width="1000"/>
+
 ## Getting Started: 
 - ### Prerequisite:
   - Download [Python3.x](https://www.python.org/downloads/) on your system.
