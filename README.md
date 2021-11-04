@@ -43,11 +43,15 @@ ER Diagram                 |  Application Flowchart
 :-------------------------:|:-------------------------:
 <img src="https://github.com/Himanshuu-Gupta/Simplii/blob/main/docs/Phase%202/DB_Schema.jpeg" width="500" height="350" />  | <img src="https://github.com/ivbhatt/Simplii/blob/main/docs/architectureImages/webappFlowchart.png" width="500" height="350" />
 
-## Quick look:
+## Quick App Preview:
 
-- ### Website Screenshots
+- **Sign Up Page**
+  - User Interface to signup to the app
+  
+  <img src="https://user-images.githubusercontent.com/18304940/140264522-ef073322-e3fe-48f6-b785-9688c1225f61.jpeg" width="1000"/>
+  
 <img src="https://user-images.githubusercontent.com/18304940/140264509-c19cb558-a9b2-462f-94d7-0aea4a9fb601.jpeg" width = "1000"/>
-<img src="https://user-images.githubusercontent.com/18304940/140264522-ef073322-e3fe-48f6-b785-9688c1225f61.jpeg" width="1000"/>
+
 <img src="https://user-images.githubusercontent.com/18304940/140264503-6019577d-bfae-4592-b935-1d8a497bcc87.jpeg" width="1000" />
 <img src="https://user-images.githubusercontent.com/18304940/140264497-c547ed7a-0b67-4f09-b87c-884e3039a462.jpeg" width="1000" />
 <img src="https://user-images.githubusercontent.com/18304940/140264482-49072881-6613-4e57-a6d2-bfc7960a39bc.jpeg" width="1000"/>
