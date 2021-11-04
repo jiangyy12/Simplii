@@ -13,6 +13,8 @@ import src.models.task_model as task_model
 
 from src.controller.task_controller import tasks
 
+from src.login.login import login
+
 
 app = Flask(__name__)
 
@@ -106,11 +108,6 @@ def user_details():
     """This function renders the edit task page."""
     return render_template("view_user_details.html", data=refresh_data())
 
-@app.route("/login")
-def login():
-    """This function renders the edit task page."""
-    return render_template("login.html", data=refresh_data())
-
 
 @app.route("/update_user_info", methods = ["POST"])
 def update_user_information():
@@ -190,5 +187,6 @@ def delete_task_byID():
 
 if __name__ == "__main__":
     app.register_blueprint(tasks)
+    app.register_blueprint(login)
     app.run(debug = True)
 
