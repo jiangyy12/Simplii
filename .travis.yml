@@ -1,9 +1,6 @@
-name: Testing
 language: python
 env:
-  - CODECOV_TOKEN='13d7f7c4-84e7-48ab-b951-8257e4432983'
-os:
-  - linux
+  - CODECOV_TOKEN='ebb71bca-6d5e-4c8c-bcc9-91a23b75b79e'
 python:
   - "3.6"      # current default Python on Travis CI
   - "3.7"
@@ -13,9 +10,8 @@ python:
   - "nightly"  # nightly build
 # command to install dependencies
 install:
-  - pip install -r requirements.txt
-  - pip install requests
+  - pip3 install -r requirements.txt
+  
+# command to run tests
 script:
-  - flask run &
-  - sleep 5
-  - python -m unittest
+  - python ./UnitTests/login_page_test.py
