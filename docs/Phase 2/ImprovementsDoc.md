@@ -1,10 +1,10 @@
 Phase 2 saw many changes in the develpoment of Smiplii. In this document we provide a detailed overview on all the changes implemented by our team during Phase 2.
 
-Front End
+## Front End
 The team worked meticulously to improve the user interface. While revamping the existing UI, we took the liberty to add a couple more features:
 The original version did not have a login or signup page. The tasks were displayed in a single page, listed one below the other. The add task section was part of the same page.
 
-Improvements:
+*Improvements:*
 1) Created a SignUp page to enable new users to create an account to use Simplii.
 2) Designed a login page that acts as the portal to sign in once a user has an account.
 3) Improved existing UI for viewing all tasks. 
@@ -15,4 +15,8 @@ Improvements:
   -> Yellow indicates Waiting - This usually happens when there exists a dependency on someone else to complete the task. For example, if the user wishes the task to be reviewed by someone before marking it as complete.
   -> Green indicates Done - This indicates the task at hand has been completed and is no longer in the pipeline
 
-Back End
+## Back End
+The original version after Phase 1 was not hosted on a backend. Our team strived to host the app on AWS to leverage cloud services and to assist future scalability.
+
+*Improvements:*
+1) Redesigned the schema for Simplii - we introduced a new entity called "Categories" into the schema. This thoughtfulness allows users to tag their tasks under a Category of their choice.
