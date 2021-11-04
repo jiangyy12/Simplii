@@ -35,7 +35,6 @@ class task_model:
         dt = current_date
         start_date = dt - timedelta(days=dt.weekday())
         query = "SELECT  *, Categories.Category_name, DATE(Duedate) FROM Tasks JOIN Categories ON Tasks.Category= Categories.Category_ID WHERE Duedate <='"+str(start_date)+'\' and status <> "Done"'
-        print(query)
         result = con.run_query(query)
         result = pd.DataFrame(list(result))
         return result.to_dict('records')
