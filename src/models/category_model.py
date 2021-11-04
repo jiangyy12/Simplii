@@ -1,6 +1,6 @@
 
 import pandas as pd
-from sql_helper import sql_helper
+from src.models.sql_helper import sql_helper
 
 con = sql_helper()
 class category_model:
@@ -15,8 +15,8 @@ class category_model:
         con.run_query(query)
         return
     
-    def get_category(self, data):
-        query = "SELECT Category_name FROM category;"
+    def get_category():
+        query = "SELECT Category_ID, Category_name FROM Categories;"
         result = con.run_query(query)
         result = pd.DataFrame(list(result))
         return result.to_dict('records')

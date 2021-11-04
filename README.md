@@ -1,4 +1,6 @@
 # Simplii
+*Make Multitasking Manageable!*
+
 **Task Scheduler Web App**
 
 [![DOI](https://zenodo.org/badge/419134447.svg)](https://zenodo.org/badge/latestdoi/419134447)
@@ -13,6 +15,7 @@
 ## Why use Simplii?
 
 Planning ahead has never been "Simpl"er! 
+<br>
 Ever felt that your day went by not as productively as you'd wish? We hear you! With Simplii, you can schedule your tasks and prioritize your efforts based on how you are feeling. Our tool enables the user to efficiently multi-task or switch tasks based on mood to provide a customized user experience while completing routine tasks. `Simplii` parameterizes emotions, deadlines, task difficulty and moods to suggest a task to be done keeping you at your productive best.
 
 ## Visual Walkthrough:
