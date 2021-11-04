@@ -10,7 +10,7 @@
 ![Github closes issues](https://img.shields.io/github/issues-closed-raw/Himanshuu-Gupta/Simplii)
 ![Github pull requests](https://img.shields.io/github/issues-pr/Himanshuu-Gupta/Simplii)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Build Status](https://app.travis-ci.com/UnnatiPrema/Simplii.svg?branch=main)](https://app.travis-ci.com/UnnatiPrema/Simplii)
+[![Build Status](https://app.travis-ci.com/Himanshuu-Gupta/Simplii.svg?branch=main)](https://app.travis-ci.com/Himanshuu-Gupta/Simplii)
 
 ## Why use Simplii?
 
@@ -118,7 +118,7 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 ## Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii/blob/main/CONTRIBUTING.md) if you want to contrbute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
-## Contributors of Round 2
+## Contributors of Phase 2
 <center>
   <table>
   <tr>
@@ -131,7 +131,7 @@ Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii
 </table>
 </center>
 
-## Contributors of Round 1
+## Contributors of Phase 1
 <center>
   <table>
     <tr>
