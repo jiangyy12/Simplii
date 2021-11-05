@@ -105,6 +105,10 @@ ER Diagram                 |  Application Flowchart
      - Site will be hosted at:
        `http://127.0.0.1:5000/`
 
+## Tools
+- Code Formatter: [black](https://github.com/psf/black)
+- Syntax and Code Checker: [PyLint](https://pylint.org/)
+
 ## Third-Party Tools
 
 - [AWS Relational Database Service-RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html)
