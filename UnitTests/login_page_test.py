@@ -1,5 +1,6 @@
 from unittest.main import main
 from flask import app
+from flask import Flask
 from flask.typing import StatusCode
 import unittest
 import sys, os, inspect
