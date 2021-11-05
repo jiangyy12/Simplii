@@ -7,7 +7,6 @@ parentdir = os.path.dirname(currentdir)
 sys.path.insert(0, parentdir)
 
 
-
 class FlaskTest(unittest.TestCase):
 
     #check if response is 200
@@ -29,5 +28,5 @@ class FlaskTest(unittest.TestCase):
         response = tester.get("/login")
         self.assertEqual(b'Simplii' in response.data, True)
 
-# if __name__=="__main__":
-#      unittest.main()
+if __name__=="__main__":
+     unittest.main()
