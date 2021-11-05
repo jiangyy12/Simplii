@@ -120,6 +120,39 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 ## Chat Channel
 <code><a href="https://discord.gg/twMMQrUuKB" target="_blank"><img height="100" width="250" src="https://user-images.githubusercontent.com/42767118/135394825-26dee6db-7a64-4e3f-902a-1e35abd4cf0c.png"></a></code>
 
+## Phase 1:
+
+- [x] Create database ER diagram
+- [x] Designed application flowchart
+- [x] Create Dashboard Page
+- [x] Create Add task form
+- [x] Setup Flask
+- [x] Add Unit testing
+
+## Phase 2:
+
+- [x] Update database ER diagram by including entity "Categories"
+- [x] Host application on AWS Relational Database Service
+- [x] Create SQL DML and DDL queries
+- [x] Improve dashboard UI
+- [x] Create Login Page
+- [x] Create Signup Page
+- [x] Add more unit testing
+- [x] Add Error Handling mechanisms
+- [x] Create pop-up task adding form
+- [x] Color code the varios task based on status
+- [x] Prioritize tasks based on deadlines into "This week", "Backlog" and "Future Tasks"
+- [x] Established connection between frontend and relational database
+
+### Future Enhancements:
+
+- [ ] CI/CD Build pipeline should be implemented
+- [ ] Visualisation on Tasks 
+- [ ] User session management needs to be implemented
+- [ ] Slack/ Discord Reminders or Subscription
+- [ ] Sub-tasks check list within a task
+
+
 ## Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii/blob/main/CONTRIBUTING.md) if you want to contrbute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
