@@ -66,8 +66,12 @@ ER Diagram                 |  Application Flowchart
   - User interface for adding a new tasks to the portal
 <img src="https://user-images.githubusercontent.com/18304940/140264497-c547ed7a-0b67-4f09-b87c-884e3039a462.jpeg" width="1000" />
 
+- **View Current Tasks** 
+  - User interface to view current pending tasks
 <img src="https://user-images.githubusercontent.com/18304940/140264482-49072881-6613-4e57-a6d2-bfc7960a39bc.jpeg" width="1000"/>
 
+- **View backlog Tasks** 
+  - User interface to view all backlog tasks
 <img src="https://user-images.githubusercontent.com/18304940/140264488-94925f49-3b8e-48c1-8a8f-1083e26cbe69.jpeg" width="1000"/>
 
 
