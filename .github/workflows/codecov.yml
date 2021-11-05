@@ -16,7 +16,7 @@ jobs:
     - name: Install Python 3.9.7
       uses: actions/setup-python@v1
       with:
-        python-version: 3.8.7
+        python-version: 3.8.12
     - name: Install dependencies
       run: |
         pip install pytest-cov
