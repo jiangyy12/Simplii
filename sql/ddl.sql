@@ -39,6 +39,11 @@ LOCK TABLES `Categories` WRITE;
 /*!40000 ALTER TABLE `Categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
+BEGIN;
+INSERT INTO `Categories` VALUES (1, 'intern');
+INSERT INTO `Categories` VALUES (2, 'school');
+COMMIT;
+
 --
 -- Table structure for table `Login_info`
 --
@@ -135,6 +140,10 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-11-02 23:17:09
+<<<<<<< HEAD
+=======
+
+>>>>>>> database_Guo
 --
 -- Table structure for table `Employee`
 --
@@ -161,6 +170,6 @@ DROP TABLE IF EXISTS `Task_Employee`;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `Task_Employee` (
                             `EmployeeID` int NOT NULL,
-                            `TaskID` varchar(45) DEFAULT NULL,
+                            `TaskID` int NOT NULL,
                             PRIMARY KEY (`EmployeeID`, `TaskID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
