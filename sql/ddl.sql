@@ -135,3 +135,33 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-11-02 23:17:09
+
+--
+-- Table structure for table `Employee`
+--
+
+DROP TABLE IF EXISTS `Employee`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Employee` (
+                        `EmployeeID` int NOT NULL,
+                        `Name` varchar(45) DEFAULT NULL,
+                        `Age` varchar(45) DEFAULT NULL,
+                        `Skill` varchar(45) DEFAULT NULL,
+                        `Telephone` varchar(45) DEFAULT NULL,
+                        `Title` varchar(45) DEFAULT NULL,
+                        PRIMARY KEY (`EmployeeID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+BEGIN;
+INSERT INTO `Employee` VALUES (1, 'Das', '28', 'Java', '919919919', 'Software Engineer');
+COMMIT;
+
+DROP TABLE IF EXISTS `Task_Employee`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Task_Employee` (
+                            `EmployeeID` int NOT NULL,
+                            `TaskID` int NOT NULL,
+                            PRIMARY KEY (`EmployeeID`, `TaskID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
