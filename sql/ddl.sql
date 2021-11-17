@@ -39,6 +39,11 @@ LOCK TABLES `Categories` WRITE;
 /*!40000 ALTER TABLE `Categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
+BEGIN;
+INSERT INTO `Categories` VALUES (1, 'intern');
+INSERT INTO `Categories` VALUES (2, 'school');
+COMMIT;
+
 --
 -- Table structure for table `Login_info`
 --
