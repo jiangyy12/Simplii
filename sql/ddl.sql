@@ -2,7 +2,7 @@
 --
 -- Host: 127.0.0.1    Database: tasks
 -- ------------------------------------------------------
--- Server version	8.0.27
+-- Server version 8.0.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -86,6 +86,7 @@ CREATE TABLE `Tasks` (
   `Duedate` datetime DEFAULT NULL,
   `Hours` int DEFAULT NULL,
   `Category` int DEFAULT NULL,
+  `Description` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`TaskID`),
   UNIQUE KEY `TaskID_UNIQUE` (`TaskID`),
   KEY `UserID_idx` (`UserID`),
