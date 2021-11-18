@@ -98,6 +98,9 @@ CREATE TABLE `Tasks` (
 --
 -- Dumping data for table `Tasks`
 --
+BEGIN;
+INSERT INTO `Tasks` VALUES (1, 1, 'Create Database', 'In Progress', '2021-11-17 00:00:00', '2021-11-30 23:59:59', 20, 1);
+COMMIT;
 
 LOCK TABLES `Tasks` WRITE;
 /*!40000 ALTER TABLE `Tasks` DISABLE KEYS */;
@@ -124,6 +127,10 @@ CREATE TABLE `User` (
 --
 -- Dumping data for table `User`
 --
+BEGIN;
+INSERT INTO `User` VALUES (1, 'yjiang@ncsu.edu', 'Yuyang Jiang', '123456');
+COMMIT;
+
 
 LOCK TABLES `User` WRITE;
 /*!40000 ALTER TABLE `User` DISABLE KEYS */;
@@ -140,7 +147,6 @@ UNLOCK TABLES;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
 -- Dump completed on 2021-11-02 23:17:09
-
 
 --
 -- Table structure for table `Employee`
@@ -171,3 +177,37 @@ CREATE TABLE `Task_Employee` (
                             `TaskID` int NOT NULL,
                             PRIMARY KEY (`EmployeeID`, `TaskID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+BEGIN;
+INSERT INTO `Task_Employee` VALUES (1, 1);
+COMMIT;
+
+
+
+DROP TABLE IF EXISTS `Project`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Project` (
+                            `ProjectID` int NOT NULL,
+                            `ProjectName` varchar(45) DEFAULT NULL,
+                            `Description` varchar(45) DEFAULT NULL,
+                            `Technology` varchar(45) DEFAULT NULL,
+                            PRIMARY KEY (`ProjectID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+BEGIN;
+INSERT INTO `Project` VALUES (1, 'TeamFormation', 'Match team and proj', 'Python, JS');
+COMMIT;
+
+DROP TABLE IF EXISTS `Task_Project`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `Task_Project` (
+                                 `ProjectID` int NOT NULL,
+                                 `TaskID` int NOT NULL,
+                                 PRIMARY KEY (`ProjectID`, `TaskID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+BEGIN;
+INSERT INTO `Task_Project` VALUES (1, 1);
+COMMIT;
