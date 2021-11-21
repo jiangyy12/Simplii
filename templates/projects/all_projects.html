@@ -1,0 +1,27 @@
+<div class="card status-card col-md" style="width: auto;">
+    <i class="material-icons card-icons">project</i>
+    <div class="card-body">
+        <h5 class="card-title">All Projects</h5>
+    </div>
+    <table data-toggle="table" data-flat="true" data-search="true">
+        <thead>
+            <tr style="background-color: #D5D8DD; text-align: center;">
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Technology</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in all_projects %}
+            <tr style="text-align: center;">
+                <td>{{ item.0 }}</td>
+                <td>{{ item.1 }}</td>
+                <td>{{ item.2 }}</td>
+                <td style="text-align: center;"><a href="/edit_project"><i class="material-icons">edit</i></a></td>
+            </tr>
+            {% endfor %}
+
+        </tbody>
+    </table>
+</div>

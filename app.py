@@ -4,7 +4,7 @@ import src.models.task_model as task_model
 import src.models.category_model as category_model
 from src.controller.task_controller import tasks
 from src.login.login import login
-
+import src.models.project_model as project_model
 app = Flask(__name__)
 app.register_blueprint(handle_err)
 app.register_blueprint(tasks)
@@ -31,6 +31,12 @@ def view_all_tasks():
     all_tasks = task_model.task_model.get_all_taks()
     """This function renders the edit task page."""
     return render_template("view_all_tasks.html", all_tasks=all_tasks)
+
+@app.route("/view_all_projects")
+def view_all_projects():
+    all_projects = project_model.project_model.get_project()
+    """This function renders the edit task page."""
+    return render_template("view_all_project.html", all_projects=all_projects)
 
 @app.route("/user_details")
 def user_details():
