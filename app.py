@@ -5,6 +5,7 @@ import src.models.category_model as category_model
 from src.controller.task_controller import tasks
 from src.login.login import login
 import src.models.project_model as project_model
+from flask import Blueprint, request, redirect
 app = Flask(__name__)
 app.register_blueprint(handle_err)
 app.register_blueprint(tasks)
@@ -44,6 +45,15 @@ def user_details():
     return render_template("view_user_details.html")
 
 
+@app.route("/project", methods=['POST'])
+def create_project():
+    try:
+        data = request.form
+        project_model.project_model().create_project(data)
+        return redirect('/view_all_projects')
+    except Exception as e:
+        print(e)
+        exit(1)    
 if __name__ == "__main__":
     app.run(debug=True)
 

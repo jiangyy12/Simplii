@@ -10,7 +10,8 @@ class project_model:
             columns += str(key)+', '
             values += "'"+str(value)+"', "
 
-        query = "INSERT INTO  ("+columns[:-2]+" ) VALUES (" + values[:-2]+" );"
+        query = "INSERT INTO Project ("+columns[:-2]+" ) VALUES (" + values[:-2]+" );"
+        print(query)
         con.run_query(query)
         return
     
