@@ -50,12 +50,24 @@ class task_model:
     def create_tasks(self, data):
         columns = ''
         values = ''
+        projectID = ""
+        print(data.items())
         for key, value in data.items():
+            print ('key=',key,'，value=',value)
+            if(key == "Project"):
+                projectID = str(value)
+                continue
             columns += str(key)+', '
             values += "'"+str(value)+"', "
 
         query = "INSERT INTO Tasks ("+columns[:-2]+" ) VALUES (" + values[:-2]+" );"
         print(query)
+        con.run_query(query)
+        query = "SELECT IF(MAX(TaskID) IS NULL, 0, MAX(TaskID)) AS maxid FROM Tasks"
+        result = con.run_query(query)
+        print(list(result)[0][0])
+        taskID = list(result)[0][0];
+        query = "INSERT INTO Task_Project (ProjectID, TaskID) VALUES (" + str(projectID) +","+ str(taskID)+")" 
         con.run_query(query)
         return
 

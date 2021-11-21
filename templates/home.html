@@ -48,9 +48,9 @@
                                     <input type="text" name="Taskname" class="form-control" id="taskName" placeholder="Do Dishes" required="required">
                                 </div>
                                 <div class="form-group">
-                                    <label for="Category" required="required">Project</label>
+                                    <label for="Project" required="required">Project</label>
                                     <!-- This should be populated form the database -->
-                                    <select class="form-control" name="Category" aria-label="Default select example">
+                                    <select class="form-control" name="Project" aria-label="Default select example">
                                         {% for item in projects %}
                                             <option value="{{ item.0 }}">{{ item.1 }}</option>
                                         {% endfor %}
@@ -60,7 +60,6 @@
                                 <input type="hidden" id="Status" name="Status" value="Waiting">
                                 <div class="form-group">
                                     <label for="Category" required="required">Category</label>
-                                    <!-- This should be populated form the database -->
                                     <select class="form-control" name="Category" aria-label="Default select example">
                                         {% for item in categories %}
                                             <option value="{{ item.0 }}">{{ item.1 }}</option>

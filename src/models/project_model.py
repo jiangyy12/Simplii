@@ -16,7 +16,7 @@ class project_model:
         return
     
     def get_project():
-        query = "SELECT ProjectName, Description, Technology FROM Project;"
+        query = "SELECT ProjectID, ProjectName, Description, Technology FROM Project;"
         result = con.run_query(query)
         result = pd.DataFrame(list(result))
         return result.to_dict('records')
