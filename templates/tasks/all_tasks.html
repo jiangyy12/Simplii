@@ -6,6 +6,7 @@
     <table data-toggle="table" data-flat="true" data-search="true">
         <thead>
             <tr style="background-color: #D5D8DD; text-align: center;">
+                <th>ProjectName</th>
                 <th>Task</th>
                 <th data-sortable="true">Status</th>
                 <th>Category</th>
@@ -17,6 +18,7 @@
         <tbody>
             {% for item in all_tasks %}
             <tr>
+                <td>{{ item.13}}</td>
                 <td>{{ item.2 }}</td>
                 {% if item.4 == 'Done' %}
                 <td style="background-color: lightgreen;">{{ item.4 }}</td>
@@ -28,8 +30,8 @@
                 <td style="background-color: lightblue;">{{ item.4 }}</td>
                 {% endif %}
                 <td>{{ item.9 }}</td>
-                <td>{{ item.11 }}</td>
-                <td>{{ item.12 }}</td>
+                <td>{{ item.5 }}</td>
+                <td>{{ item.6 }}</td>
                 <td style="text-align: center;"><a href="/edit_task"><i class="material-icons">edit</i></a></td>
             </tr>
             {% endfor %}

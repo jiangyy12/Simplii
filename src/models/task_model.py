@@ -9,7 +9,7 @@ class task_model:
         pass
 
     def get_all_taks():
-        query = "SELECT *, Categories.Category_name, DATE(Startdate), DATE(Duedate) FROM Tasks JOIN Categories ON Tasks.Category= Categories.Category_ID"
+        query = "SELECT *, Categories.Category_name, DATE(Startdate), DATE(Duedate) FROM ((Tasks INNER JOIN Categories ON Tasks.Category= Categories.Category_ID) INNER JOIN Task_Project ON Tasks.TaskID = Task_Project.TaskID) LEFT JOIN Project ON Project.ProjectID = Task_Project.ProjectID ORDER BY ProjectName;"
         print(query)
         result = con.run_query(query)
         result = pd.DataFrame(list(result))
