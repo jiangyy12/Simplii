@@ -18,9 +18,10 @@ def homePage():
     backlog_tasks = task_model.task_model.get_backlog()
     future_tasks = task_model.task_model.get_future_tasks()
     categories = category_model.category_model.get_category()
+    projects = project_model.project_model.get_project()
     """This function renders the home page."""
     return render_template("home.html", this_week_tasks=this_week_tasks,
-    backlog_tasks=backlog_tasks, future_tasks=future_tasks, categories= categories)
+    backlog_tasks=backlog_tasks, future_tasks=future_tasks, categories= categories, projects = projects)
 
 @app.route("/edit_task")
 def edit_task():

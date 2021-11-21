@@ -47,6 +47,15 @@
                                     <label for="taskName">Task Name</label>
                                     <input type="text" name="Taskname" class="form-control" id="taskName" placeholder="Do Dishes" required="required">
                                 </div>
+                                <div class="form-group">
+                                    <label for="Category" required="required">Project</label>
+                                    <!-- This should be populated form the database -->
+                                    <select class="form-control" name="Category" aria-label="Default select example">
+                                        {% for item in projects %}
+                                            <option value="{{ item.0 }}">{{ item.1 }}</option>
+                                        {% endfor %}
+                                </select>
+                                </div>
                                 <input type="hidden" id="UserID" name="UserID" value="1">
                                 <input type="hidden" id="Status" name="Status" value="Waiting">
                                 <div class="form-group">
@@ -58,6 +67,7 @@
                                         {% endfor %}
                                 </select>
                                 </div>
+                                
                                 <div class="form-group">
                                     <label for="startDate">Start Date</label>
                                     <input class="form-control" name="Startdate" type="date" value="2021-11-01" id="example-date-input">
@@ -70,6 +80,7 @@
                                     <label for="hours">Hours</label>
                                     <input type="number" name="Hours" class="form-control" id="hours" placeholder="Number of Hours">
                                 </div>
+                                
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
