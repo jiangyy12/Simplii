@@ -6,14 +6,22 @@ class sql_helper:
 
     def connect_database(self):
         try:
-            self.connection_obj = pymysql.connect(
-                    host='localhost',
+            # self.connection_obj = pymysql.connect(
+            #         host='localhost',
+            #         port = 3306,
+            #         user = 'root',
+            #         password = '123456abcA',
+            #         db = "simpli",
+            #         autocommit=True
+            #         ) 
+           self.connection_obj = pymysql.connect(
+                    host='database-1.ctocose1cw5t.us-east-1.rds.amazonaws.com',
                     port = 3306,
-                    user = 'root',
-                    password = '',
+                    user = 'admin',
+                    password = '123456abcA',
                     db = "simpli",
                     autocommit=True
-                    ) 
+                    )    
         except:
             pass
             #Need to import error handling class
