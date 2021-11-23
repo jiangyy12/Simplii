@@ -100,7 +100,7 @@ CREATE TABLE `Tasks` (
 -- Dumping data for table `Tasks`
 --
 BEGIN;
-INSERT INTO `Tasks` VALUES (1, 1, 'Create Database', 'In Progress', '2021-11-17 00:00:00', '2021-11-30 23:59:59', 20, 1);
+INSERT INTO `Tasks` VALUES (1, 1, 'Create Database', 'In Progress', '2021-11-17 00:00:00', '2021-11-30 23:59:59', 20, 1, 'Create mysql database');
 COMMIT;
 
 LOCK TABLES `Tasks` WRITE;
