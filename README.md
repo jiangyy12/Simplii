@@ -165,6 +165,3 @@ Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii
 
 
 
-## Support
-For any queries and help, please reach out to us at: aunayak@ncsu.edu
-
