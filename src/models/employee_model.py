@@ -17,7 +17,7 @@ class employee_model:
         con.run_query(query)
         return
 
-    def get_employee(self):
+    def get_employee():
         # query = "SELECT ProjectID, ProjectName, Description, Technology FROM Project;"
         query = "SELECT EmployeeID, Name, Age, Skill, Telephone, Title FROM Employee;"
         result = con.run_query(query)

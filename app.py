@@ -20,9 +20,11 @@ def homePage():
     future_tasks = task_model.task_model.get_future_tasks()
     categories = category_model.category_model.get_category()
     projects = project_model.project_model.get_project()
+    employees = employee_model.employee_model.get_employee()
     """This function renders the home page."""
     return render_template("home.html", this_week_tasks=this_week_tasks,
-    backlog_tasks=backlog_tasks, future_tasks=future_tasks, categories= categories, projects = projects)
+    backlog_tasks=backlog_tasks, future_tasks=future_tasks, categories= categories, projects = projects,
+    employees = employees)
 
 @app.route("/edit_task")
 def edit_task():
@@ -49,7 +51,8 @@ def user_details():
 @app.route("/view_all_employees")
 def view_all_employees():
     """This function renders the edit task page."""
-    all_employees = employee_model.employee_model.create_employee()
+    all_employees = employee_model.employee_model.get_employee()
+    return render_template("view_all_employees.html", all_employees=all_employees)
 
 @app.route("/project", methods=['POST'])
 def create_project():
