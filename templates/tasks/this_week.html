@@ -9,6 +9,7 @@
                 <th>Task</th>
                 <th data-sortable="true">Status</th>
                 <th>Category</th>
+                <th>Description</th>
                 <th>Edit</th>
             </tr>
         </thead>
@@ -25,7 +26,8 @@
                 {% else %}
                 <td style="background-color: lightblue;">{{ item.4 }}</td>
                 {% endif %}
-                <td>{{ item.9 }}</td>
+                <td>{{ item.8 }}</td>
+                <td>{{ item.10 }}</td>
                 <td style="text-align: center;"><a href="/edit_task"><i class="material-icons">edit</i></a></td>
             </tr>
             {% endfor %}

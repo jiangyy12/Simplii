@@ -12,13 +12,14 @@
                 <th>Category</th>
                 <th>Start Date</th>
                 <th>Due Date</th>
+                <th>Description</th>
                 <th>Edit</th>
             </tr>
         </thead>
         <tbody>
             {% for item in all_tasks %}
             <tr>
-                <td>{{ item.13}}</td>
+                <td>{{ item.14}}</td>
                 <td>{{ item.2 }}</td>
                 {% if item.4 == 'Done' %}
                 <td style="background-color: lightgreen;">{{ item.4 }}</td>
@@ -29,9 +30,10 @@
                 {% else %}
                 <td style="background-color: lightblue;">{{ item.4 }}</td>
                 {% endif %}
-                <td>{{ item.9 }}</td>
+                <td>{{ item.10 }}</td>
                 <td>{{ item.5 }}</td>
                 <td>{{ item.6 }}</td>
+                <td>{{ item.8}}</td>
                 <td style="text-align: center;"><a href="/edit_task"><i class="material-icons">edit</i></a></td>
             </tr>
             {% endfor %}
