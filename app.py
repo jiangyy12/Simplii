@@ -5,6 +5,7 @@ import src.models.category_model as category_model
 from src.controller.task_controller import tasks
 from src.login.login import login
 import src.models.project_model as project_model
+import src.models.employee_model as employee_model
 from flask import Blueprint, request, redirect
 app = Flask(__name__)
 app.register_blueprint(handle_err)
@@ -45,6 +46,10 @@ def user_details():
     """This function renders the edit task page."""
     return render_template("view_user_details.html")
 
+@app.route("/view_all_employees")
+def view_all_employees():
+    """This function renders the edit task page."""
+    all_employees = employee_model.employee_model.create_employee()
 
 @app.route("/project", methods=['POST'])
 def create_project():
