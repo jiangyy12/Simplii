@@ -149,6 +149,11 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 - [x] Prioritize tasks based on deadlines into "This week", "Backlog" and "Future Tasks"
 - [x] Established connection between frontend and relational database
 
+## Phase 3:
+
+- [x] Update database ER diagram
+
+
 ### Future Enhancements:
 
 - [ ] CI/CD Build pipeline should be implemented
