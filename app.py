@@ -28,6 +28,10 @@ def edit_task():
     """This function renders the edit task page."""
     return render_template("edit_task.html")
 
+# @app.route("/edit_task", methods=["DELETE"])
+# def delete_task():
+#     """This function renders the """
+
 @app.route("/view_all_tasks")
 def view_all_tasks():
     all_tasks = task_model.task_model.get_all_taks()
