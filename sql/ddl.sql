@@ -42,6 +42,7 @@ UNLOCK TABLES;
 BEGIN;
 INSERT INTO `Categories` VALUES (1, 'intern');
 INSERT INTO `Categories` VALUES (2, 'school');
+INSERT INTO `Categories` VALUES (3, 'other');
 COMMIT;
 
 --
