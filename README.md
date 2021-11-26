@@ -161,10 +161,7 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 ## Contributions to the Project
 Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii/blob/main/CONTRIBUTING.md) if you want to contrbute to the Wolftrack source code. Follow all the guidelines mentioned and raise a pull request for the developers to review before the code goes to the main source code.
 
-## Contributors of Phase 2
-<center>
-  <table></table>
-</center>
+
 
 ## Contributors of Phase 1
 <center>
