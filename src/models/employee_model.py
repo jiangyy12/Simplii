@@ -7,9 +7,17 @@ class employee_model:
     def create_employee(self, data):
         columns = ''
         values = ''
+        employeeId = ''
         for key, value in data.items():
-            columns += str(key) + ', '
-            values += "'" + str(value) + "', "
+            if key == 'EmployeeID':
+                employeeId += str(value)
+            if key != 'Task':
+                columns += str(key) + ', '
+                values += "'" + str(value) + "', "
+            else:
+                query2 = "INSERT INTO Task_Employee (EmployeeID, TaskID) VALUES (" + employeeId + ", " + str(value) + ");"
+                print(query2)
+                con.run_query(query2)
 
         # query = "INSERT INTO Project (" + columns[:-2] + " ) VALUES (" + values[:-2] + " );"
         query = "INSERT INTO Employee (" + columns[:-2] + " ) VALUES (" + values[:-2] + " );"
