@@ -5,6 +5,7 @@ import src.models.category_model as category_model
 from src.controller.task_controller import tasks
 from src.login.login import login
 import src.models.project_model as project_model
+import src.models.employee_model as employee_model
 from flask import Blueprint, request, redirect
 app = Flask(__name__)
 app.register_blueprint(handle_err)
@@ -19,9 +20,11 @@ def homePage():
     future_tasks = task_model.task_model.get_future_tasks()
     categories = category_model.category_model.get_category()
     projects = project_model.project_model.get_project()
+    employees = employee_model.employee_model.get_employee()
     """This function renders the home page."""
     return render_template("home.html", this_week_tasks=this_week_tasks,
-    backlog_tasks=backlog_tasks, future_tasks=future_tasks, categories= categories, projects = projects)
+    backlog_tasks=backlog_tasks, future_tasks=future_tasks, categories= categories, projects = projects,
+    employees = employees)
 
 @app.route("/edit_task")
 def edit_task():
@@ -49,6 +52,11 @@ def user_details():
     """This function renders the edit task page."""
     return render_template("view_user_details.html")
 
+@app.route("/view_all_employees")
+def view_all_employees():
+    """This function renders the edit task page."""
+    all_employees = employee_model.employee_model.get_employee()
+    return render_template("view_all_employees.html", all_employees=all_employees)
 
 @app.route("/project", methods=['POST'])
 def create_project():
@@ -58,7 +66,19 @@ def create_project():
         return redirect('/view_all_projects')
     except Exception as e:
         print(e)
-        exit(1)    
+        exit(1)
+
+@app.route("/employee", methods=['POST'])
+def create_employee():
+    try:
+        data = request.form
+        employee_model.employee_model().create_employee(data=data)
+        return redirect('/view_all_employees')
+    except Exception as e:
+        print(e)
+        exit(1)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 

@@ -1,0 +1,73 @@
+{% extends "layout/base.html" %} {% block content %}
+
+<div class="container-fluid">
+    <div class="row content">
+
+        <!-- Left Sidebar -->
+        <div class="col-sm-3 sidenav sidenav-left">
+
+            {% include 'layout/user_details.html' %}
+
+        </div>
+        <div class="col-sm-9 text-left main-content">
+        <div>
+            <a type="button" class="btn btn-outline-dark" href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter" style="margin-left: 20px;">Add New Employee</a>
+        </div>
+        <!-- Content -->
+        <div class="">
+            <center>
+
+                <!-- View all tasks -->
+                {% include 'employees/all_employees.html' %}
+
+            </center>
+            <div class="modal fade new-application-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">New Employee</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form action="/employee" method="post">
+                            <div class="modal-body" style="text-align: left;">
+                                <div class="form-group">
+                                    <label for="taskName">Employee Id</label>
+                                    <input type="text" name="EmployeeID" class="form-control" id="employeeId" placeholder="Do Dishes" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label for="taskName">Name</label>
+                                    <input type="text" name="Name" class="form-control" id="name" placeholder="Do Dishes" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label for="taskName">Age</label>
+                                    <input type="text" name="Age" class="form-control" id="age" placeholder="Do Dishes" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label for="taskName">Skill</label>
+                                    <input type="text" name="Skill" class="form-control" id="skill" placeholder="Do Dishes" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label for="taskName">Telephone</label>
+                                    <input type="text" name="Telephone" class="form-control" id="telephone" placeholder="Do Dishes" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <label for="taskName">Title</label>
+                                    <input type="text" name="Title" class="form-control" id="title" placeholder="Do Dishes" required="required">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="submit" class="btn btn-primary">Add</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
