@@ -62,7 +62,19 @@ def create_project():
         return redirect('/view_all_projects')
     except Exception as e:
         print(e)
-        exit(1)    
+        exit(1)
+
+@app.route("/employee", methods=['POST'])
+def create_employee():
+    try:
+        data = request.form
+        employee_model.employee_model().create_employee(data=data)
+        return redirect('/view_all_employees')
+    except Exception as e:
+        print(e)
+        exit(1)
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
