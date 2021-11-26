@@ -56,7 +56,8 @@ def user_details():
 def view_all_employees():
     """This function renders the edit task page."""
     all_employees = employee_model.employee_model.get_employee()
-    return render_template("view_all_employees.html", all_employees=all_employees)
+    backlog_tasks = task_model.task_model.get_backlog()
+    return render_template("view_all_employees.html", all_employees=all_employees, backlog_tasks=backlog_tasks)
 
 @app.route("/project", methods=['POST'])
 def create_project():

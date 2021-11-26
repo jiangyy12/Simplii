@@ -57,6 +57,15 @@
                                     <label for="taskName">Title</label>
                                     <input type="text" name="Title" class="form-control" id="title" placeholder="Do Dishes" required="required">
                                 </div>
+                                <div class="form-group">
+                                    <label for="Task" required="required">Task to Enroll</label>
+                                    <!-- This should be populated form the database -->
+                                    <select class="form-control" name="Task" aria-label="Default select example">
+                                        {% for item in backlog_tasks %}
+                                            <option value="{{ item.0 }}">{{ item.2 }}</option>
+                                        {% endfor %}
+                                </select>
+                            </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
