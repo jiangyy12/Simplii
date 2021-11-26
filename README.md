@@ -163,18 +163,7 @@ Please refer to the [Contributing.md](https://github.com/Himanshuu-Gupta/Simplii
 
 
 
-## Contributors of Phase 1
-<center>
-  <table>
-    <tr>
-        <td align="center"><a href="https://github.com/apurva-s"><img src="https://avatars.githubusercontent.com/u/32777604?v=4" width="100px;" alt=""/><br /><sub><b>Apurva Sonavane</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/ArpithaVijayakumar/"><img src="https://avatars.githubusercontent.com/u/45428701?s=400&u=15851f4800b87dcd2b8cbf9ff0a040bc8987e7c0&v=4" width="100px;" alt=""/><br /><sub><b>Arpitha Vijayakumar</b></sub></a></td>
-    <td align="center"><a href="https://github.com/ivbhatt"><img src="https://avatars.githubusercontent.com/u/20361038?v=4" width="100px;" alt=""/><br /><sub><b>Ishan Bhatt</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/Krishika510"><img src="https://avatars.githubusercontent.com/u/17769434?v=4" width="100px;" alt=""/><br /><sub><b>Krishika Shivnani</b></sub></a><br /></td>
-      <td align="center"><a href="https://github.com/UnnatiPrema/"><img src="https://avatars.githubusercontent.com/u/24750759?s=400&u=ab27d86edc758ff53bd68808430d8e5bf172e34a&v=4" width="100px;" alt=""/><br /><sub><b>Unnati Nadupalli</b></sub></a><br /></td>
-    </tr>
-  </table>
-</center>
+
 
 ## Support
 For any queries and help, please reach out to us at: aunayak@ncsu.edu
