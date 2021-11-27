@@ -169,6 +169,7 @@ CREATE TABLE `Employee` (
 
 BEGIN;
 INSERT INTO `Employee` VALUES (1, 'Das', '28', 'Java', '919919919', 'Software Engineer');
+INSERT INTO `Employee` VALUES (2, 'Bob', '30', 'Python', '919919999', 'Production Manager');
 COMMIT;
 
 DROP TABLE IF EXISTS `Task_Employee`;
