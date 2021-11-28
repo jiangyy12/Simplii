@@ -1,4 +1,6 @@
-from flask import Blueprint, request
+from flask import Blueprint, request, redirect
+
+from src.controller.task_controller import task, tasks
 from src.models.project_model import project_model
 
 # project = Blueprint('project', __name__, url_prefix='/project')
