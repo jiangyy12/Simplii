@@ -12,7 +12,7 @@ python = "^3.6"
 homepage = "https://github.com/Himanshuu-Gupta/Simplii"
 repository = "https://github.com/Himanshuu-Gupta/Simplii"
 documentation = "https://github.com/Himanshuu-Gupta/Simplii"
-#
+
 classifiers = [
     "Topic :: Software Development"
 ]
