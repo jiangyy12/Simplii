@@ -14,7 +14,14 @@ class task_model:
         result = con.run_query(query)
         result = pd.DataFrame(list(result))
         return result.to_dict('records')
-    
+
+    def get_all_taks_with_employee():
+        query = "SELECT * FROM ((Tasks INNER JOIN Categories ON Tasks.Category= Categories.Category_ID) INNER JOIN Task_Employee ON Tasks.TaskID = Task_Employee.TaskID) LEFT JOIN Employee ON Employee.EmployeeID = Task_Employee.EmployeeID ORDER BY Taskname;"
+        print(query)
+        result = con.run_query(query)
+        result = pd.DataFrame(list(result))
+        return result.to_dict('records')
+
     def get_this_week_tasks(current_date=None):
         if(current_date == None):
             current_date = date.today()

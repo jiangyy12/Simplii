@@ -52,6 +52,15 @@ def user_details():
     """This function renders the edit task page."""
     return render_template("view_user_details.html")
 
+@app.route("/view_task_employee")
+def view_tasks_employee():
+    try :
+        all_tasks = task_model.task_model.get_all_taks_with_employee()
+        return render_template("view_task_employee.html", all_tasks=all_tasks)
+    except Exception as e:
+        print(e)
+        exit(1)
+
 @app.route("/view_all_employees")
 def view_all_employees():
     """This function renders the edit task page."""
