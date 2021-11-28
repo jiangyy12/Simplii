@@ -20,9 +20,9 @@ This project has the same structure as Project1,2.
 |.5|Number of commits: by different people  | in GH|
 |1|issues are being closed | evidence in GH|
 |.5|issues are discussed before they are closed | evidence in GH|
-|.5|Use of syntax checkers. |config files in GH |
+|.5|Use of syntax checkers. |https://github.com/jiangyy12/Simplii/blob/main/.pylintrc |
 |1|Issues reports: there are many  | https://github.com/jiangyy12/Simplii/issues |
-|.5|Use of code formatters. |https://github.com/jiangyy12/Simplii/blob/main/.pylintrc|
+|.5|Use of code formatters. |https://github.com/jiangyy12/Simplii/blob/main/pyproject.toml|
 |.5|Use of style checkers | https://github.com/jiangyy12/Simplii/blob/main/.pylintrc|
 |.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. ||
 |.5|test cases exist  | https://app.codecov.io/gh/jiangyy12/Simplii |
