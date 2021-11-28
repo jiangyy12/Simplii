@@ -1,61 +1,56 @@
-# Contributing to this project
+## CONTRIBUTING to Project2
 
-Follow the set of guidelines below to contribute to Math.fun!
+First off, thank you for taking the time to contribute!
 
-## Code of Conduct
+The following is the guidelines for contributing to hw2b on GitHub. These are mostly guidelines, not rules.
 
-By participating, you are expected to uphold this code. Please report unacceptable behavior to [Krishika Shivnani, Arpitha Vijayakumar, Ishan Bhatt, Apurva Sonavane, Prema Naga Unnati Nadupalli]
+### Before Getting Started
 
-Prerequistes required before starting this project
+- You need to know the packages you need.
+- You need to make sure the design decisions.
+  - when you make a significant decision, you need to know how you maintain the project and what you can or cannot support.
+  - submit the meaningful questions bravely.
 
-1. Must be a graduate student at NC State University
-2. Must be a student in Software Engineering Course in Fall 2021
-3. Have proficiency in Python
+### Getting Started
 
-## How can I Contribute?
- 
-### Reporting Bugs
+- Make sure you have GitHub account.
 
-This section guides you through submitting a bug report for SENG20-G19 SE_Project1. 
-Following these guidelines helps maintainers and the community understand your report, reproduce the behavior and find related reports.
+- Make the repository on GitHub.
 
-Before Submitting A Bug Report
+  
 
-Check the debugging guide
+### How to Contribute
 
-Check the FAQs on the forum for a list of common questions and problems.
-Determine which repository the problem should be reported in.
+First, you need to report bugs, you can create bug reports and please include as many details as possible. The information it asks can help to resolve the problem faster.
 
-Perform a cursory search to see if the problem has already been reported. 
+Then, suggest enhancements. You can submit an enhancement suggestion for our project, including completely new features and minor improvements to existing functionality. You also need to suggest as many details as possible which can help to understand the suggestion and find the related suggestions.
 
-## How Do I Submit A (Good) Bug Report?
+### Documentation Guide
 
-Use a clear and descriptive title for the issue to identify the problem.
+- Use markdown for .md documents.
 
-Describe the exact steps which reproduce the problem in as many details as possible.
-
-Provide specific examples to demonstrate the steps. 
-
-Describe the behavior you observed after following the steps and point out what exactly is the problem with that behavior.
-
-Explain which behavior you expected to see instead and why.
-
-Include screenshots and animated GIFs which show you following the described steps and clearly demonstrate the problem. 
-
-If the problem is related to performance or memory, include a CPU profile capture with your report.
-
-## Pull Requests
+### Pull Requests
 
 The process described here has several goals:
 
-Maintain the projects quality
+- Maintain project quality.
+- Fix problems that are important to users.
+- Engage the community in working.
+- Enable a sustainable system for project maintainers to review contributions.
 
-Fix problems that are important to users
+While the prerequisites above must be satisfied prior to having your pull request reviewed, the reviewer(s) may ask you to complete additional design work, tests, or other changes before your pull request can be ultimately accepted.
 
-Enable a sustainable system for the projects maintainers to review contributions
+### Committing Changes
 
-Unit testing should be done before raising a pull request
+You first need to follow the pull request above.
 
-Provide the unit testing description in the PR details
+Then, please avoid working directly on master branch and you need to create a new branch from where you want to start your work.
 
-Add reviewers to review your pull request
+Last but not least, you need to write meaningful commit messages and test for your changes.
+
+### Submitting Changes
+
+- Push the changes to the repository.
+- Submit a pull request to the original repository and follow the pull requests above.
+- Wait for feedback on the request.
+
