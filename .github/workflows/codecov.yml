@@ -27,8 +27,10 @@ jobs:
           python ./UnitTests/database_connection_test.py
           python ./UnitTests/database_crud_test.py
           python ./UnitTests/database_tables_test.py
+          coverage run test.py
+          coverage xml
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1
+      uses: codecov/codecov-action@v2
       with:
         token: c0585880-a6f3-41f2-b1f6-4b5ce8e66266
       
