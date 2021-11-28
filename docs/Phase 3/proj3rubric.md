@@ -27,7 +27,7 @@ This project has the same structure as Project1,2.
 |.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. ||
 |.5|test cases exist  |  |
 |.5|Use of code coverage  |  |
-|.5|other automated analysis tools  ||
+|.5|other automated analysis tools  |https://codeclimate.com/github/jiangyy12/Simplii|
 |.5|test cases:.a large proportion of the issues related to handling failing cases. | if a test case fails, open an issue and fix it|
 |.5|test cases are routinely executed |  |
 |1|Documentation describing how this version improves on the older version|in reademe|
