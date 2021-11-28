@@ -27,7 +27,7 @@ jobs:
           python ./UnitTests/database_connection_test.py
           python ./UnitTests/database_crud_test.py
           python ./UnitTests/database_tables_test.py
-          coverage run test.py
+          coverage run ./UnitTests/database_connection_test.py
           coverage xml
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v2
