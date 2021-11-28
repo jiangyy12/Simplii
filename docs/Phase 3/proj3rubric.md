@@ -10,18 +10,18 @@ This project has the same structure as Project1,2.
 |Score|Notes| Evidence|
 |-|-----|---------|
 |.5| short release cycles||
-|.5| workload is spread over the whole team (so one team member is often Xtimes more productive than the others...||
+|.5| workload is spread over the whole team (so one team member is often Xtimes more productive than the others...|https://github.com/jiangyy12/Simplii/pulse|
 |.5|Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing | |
 |.5|the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up  ||
 |.5|Docs: doco generated , format not ugly  | in GH|
 |.5|evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people) |  |
 |.5|evidence that the members of the team are working across multiple places in the code base | |
-|1|Docs: what: point descriptions of each class/function (in isolation)  ||
+|1|Docs: what: point descriptions of each class/function (in isolation)  |https://github.com/jiangyy12/Simplii/blob/main/docs/Phase%203/API_instruction.md|
 |.5|Number of commits: by different people  | in GH|
 |1|issues are being closed | evidence in GH|
 |.5|issues are discussed before they are closed | evidence in GH|
 |.5|Use of syntax checkers. |config files in GH |
-|1|Issues reports: there are many  | |
+|1|Issues reports: there are many  | https://github.com/jiangyy12/Simplii/issues |
 |.5|Use of code formatters. | config files in GH|
 |.5|Use of style checkers | config files in GH|
 |.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. ||
