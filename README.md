@@ -113,9 +113,6 @@ ER Diagram                 |  Application Flowchart
 ## Tools
 - Code Formatter: [black](https://github.com/psf/black)
 - Syntax and Code Checker: [PyLint](https://pylint.org/)
-- 
-## Automated Analysis Tool used:
-[Code Climate](https://codeclimate.com/github/jiangyy12/Simplii)
 
 ## Third-Party Tools
 
@@ -155,6 +152,9 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 ## Phase 3:
 
 - [x] Update database ER diagram
+- [x] Create employee table
+- [x] Create task-employee table 
+- [x] Add description attribute to task table
 
 
 ### Future Enhancements:
