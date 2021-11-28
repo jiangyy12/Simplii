@@ -5,15 +5,15 @@ tasks = Blueprint('tasks', __name__, url_prefix='/tasks')
 
 task = task_model()
 
-def get_tasks():
-    if 'period' not in request.form:
-        return 'Need time period to fetch tasks!'
-    if request.form['period'] == 'THIS WEEK':
-        return task.get_this_week_tasks()
-    if request.form['period'] == 'BACKLOG':
-        return task.get_backlog()
-    if request.form['period'] == 'FUTURE TASKS':
-        return task.get_future_tasks()
+# def get_tasks():
+#     if 'period' not in request.form:
+#         return 'Need time period to fetch tasks!'
+#     if request.form['period'] == 'THIS WEEK':
+#         return task.get_this_week_tasks()
+#     if request.form['period'] == 'BACKLOG':
+#         return task.get_backlog()
+#     if request.form['period'] == 'FUTURE TASKS':
+#         return task.get_future_tasks()
 
 @tasks.route('', methods=['POST'])
 def create_task():

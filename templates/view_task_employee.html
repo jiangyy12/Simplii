@@ -11,16 +11,46 @@
         </div>
         <div class="col-sm-9 text-left main-content">
         <div>
-            <a type="button" class="btn btn-outline-dark" href="#" class="card-link" data-toggle="modal" data-target="#exampleModalCenter" style="margin-left: 20px;">Add New Employee</a>
             <a type="button" class="btn btn-outline-dark" href="/" style="margin-left: 20px;">Back to Home</a>
-            <a type="button" class="btn btn-outline-dark" href="/view_task_employee" style="margin-left: 20px;">View Task Assignment</a>
         </div>
         <!-- Content -->
         <div class="">
             <center>
 
                 <!-- View all tasks -->
-                {% include 'employees/all_employees.html' %}
+                <!-- {% include 'employees/all_employees.html' %} -->
+                <div class="card status-card col-md" style="width: auto;">
+                    <i class="material-icons card-icons">project</i>
+                    <div class="card-body">
+                        <h5 class="card-title">Task Assignment</h5>
+                    </div>
+                    <table data-toggle="table" data-flat="true" data-search="true">
+                        <thead>
+                            <tr style="background-color: #D5D8DD; text-align: center;">
+                                <th>Task Name</th>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Employee Name</th>
+                                <th>Title</th>
+                                <th>Skill</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in all_tasks %}
+                            <tr style="text-align: center;">
+                                <td>{{ item.2 }}</td>
+                                <td>{{ item.8 }}</td>
+                                <td>{{ item.10 }}</td>
+                                <td>{{ item.14 }}</td>
+                                <td>{{ item.18 }}</td>
+                                <td>{{ item.16 }}</td>
+                {#                <td style="text-align: center;"><a href="/edit_project"><i class="material-icons">edit</i></a></td>#}
+                            </tr>
+                            {% endfor %}
+                
+                        </tbody>
+                    </table>
+                </div>
 
             </center>
             <div class="modal fade new-application-modal" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
