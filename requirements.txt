@@ -7,3 +7,5 @@ jinja2
 MarkupSafe
 Werkzeug
 pandas
+pytest==6.2.5
+pytest-cov==2.4.0
