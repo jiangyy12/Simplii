@@ -1,100 +1,121 @@
 <h1>API_Instruction</h1>
 
-**Function: /search**<br>
-**Method:get**<br>
-**Description**: Return the search results from Google using the keywords user input.<br>
-**Inputs**:
-- Keywords
-
-**Outputs**: 
-- index
-- jobTitle
-- companyName
-- location
-<br>
-<br>
-
-
-
-**Function: /application**<br>
-**Method:get**<br>
-**Description**: Get all data stored in the table “job”, "users" and "application"<br>
-**Inputs**: None<br>
-**Outputs**: 
-- jobTitle 
-- companyName 
-- date 
-- class
-- id
-<br>
-<br>
-
-
-**Function: /applicationSummaryPage**<br>
-**Method:get**<br>
-**Description**: Show the application statistics of each company, using the table “job”<br>
-**Inputs**: None<br>
-**Outputs**: 
-- companyName 
-- Waiting: the number of application in the status "Waiting"
-- Offer: the number of application in the status "Offer"
-- Rejected: the number of application in the status "Rejected"
-<br>
-<br>
-
-
-**Function: /school**<br>
-**Method:get**<br>
-**Description**: Get all data stored in the table “program”, "users" and "school"<br>
-**Inputs**: None<br>
-**Outputs**: 
-- programTitle
-- schoolName
-- date 
-- class
-- id
-<br>
-<br>
-
-
-
-**Function: /application**<br>
-**Method:post**<br>
-**Description**: Writing a new application record.<br>
+**Function: /task_controller.py/create_task()**<br>
+**Method:POST**<br>
+**Description**: Create a new task based on the input from frontend.<br>
 **Inputs**: 
-- programTitle
-- schoolName
-- date 
-- class
-- id
+- Task Name
+- Project
+- Category
+- Start Date
+- Due Date
+- Hours
+- Description
 
 **Outputs**: None
 <br>
 <br>
 
 
-**Function: /school**<br>
-**Method:post**<br>
-**Description**: Writing a new school application record.<br>
+
+**Function: /task_controller.py/delete_task()**<br>
+**Method:DELETE**<br>
+**Description**: Delete a task based on the task ID<br>
 **Inputs**: 
-- jobTitle 
-- companyName 
-- date 
-- class
-- id
+- Task ID
+
 
 **Outputs**: None
 <br>
 <br>
 
 
-**Function: token**<br>
-**Method:post**<br>
-**Description**: When a new user is signing up, writing a new token record.<br>
+**Function: /task_controller.py/update_task()**<br>
+**Method:POST**<br>
+**Description**: Update the task information based on the input from frontend.<br>
 **Inputs**: 
-- email
-- password
+- Task Name
+- Project
+- Category
+- Start Date
+- Due Date
+- Hours
+- Description
+
 
 **Outputs**: None
 <br>
 <br>
+
+
+**Function: /app.py/view_all_tasks()**<br>
+**Method:GET**<br>
+**Description**: Get all tasks informations<br>
+**Inputs**: None<br>
+**Outputs**: 
+- Task
+- Status
+- Category 
+- Due Date
+- Description
+<br>
+<br>
+
+**Function: /app.py/view_all_projects()**<br>
+**Method:GET**<br>
+**Description**: Get all projects informations<br>
+**Inputs**: None<br>
+**Outputs**: 
+- ProjectID
+- ProjectName
+- Description 
+- Technology
+<br>
+<br>
+
+**Function: /app.py/view_all_employees()**<br>
+**Method:GET**<br>
+**Description**: Get all employees informations<br>
+**Inputs**: None<br>
+**Outputs**: 
+- EmployeeID
+- Name
+- Age 
+- Skill
+- Telephone
+- Title
+<br>
+<br>
+
+**Function: /app.py/create_project()**<br>
+**Method:POST**<br>
+**Description**: Create a new Project<br>
+**Inputs**: 
+- EmployeeID
+- Name
+- Age 
+- Skill
+- Telephone
+- Title
+
+
+**Outputs**: None
+
+<br>
+<br>
+
+**Function: /app.py/create_employee()**<br>
+**Method:POST**<br>
+**Description**: Create a new Employee<br>
+**Inputs**: 
+- EmployeeID
+- TaskID
+
+
+**Outputs**: None
+<br>
+<br>
+
+
+
+
