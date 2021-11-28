@@ -102,6 +102,7 @@ CREATE TABLE `Tasks` (
 --
 BEGIN;
 INSERT INTO `Tasks` VALUES (1, 1, 'Create Database', 'In Progress', '2021-11-17 00:00:00', '2021-11-30 23:59:59', 20, 1, 'Create mysql database');
+INSERT INTO `Tasks` VALUES (2, 2, 'Write API', 'In Progress', '2021-11-19 00:00:00', '2021-12-30 23:59:59', 25, 2, 'backend and frontend');
 COMMIT;
 
 LOCK TABLES `Tasks` WRITE;
@@ -131,6 +132,7 @@ CREATE TABLE `User` (
 --
 BEGIN;
 INSERT INTO `User` VALUES (1, 'yjiang@ncsu.edu', 'Yuyang Jiang', '123456');
+INSERT INTO `User` VALUES (2, 'yliang@ncsu.edu', 'Yuchen Liang', '123456');
 COMMIT;
 
 

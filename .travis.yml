@@ -1,6 +1,6 @@
 language: python
 env:
-  - CODECOV_TOKEN='ebb71bca-6d5e-4c8c-bcc9-91a23b75b79e'
+  - CODECOV_TOKEN='c0585880-a6f3-41f2-b1f6-4b5ce8e66266'
 
 python:
   - "3.6"      # current default Python on Travis CI
