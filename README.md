@@ -122,9 +122,6 @@ ER Diagram                 |  Application Flowchart
 ## :page_facing_up: License <a name="License"></a>
 This project is licensed under the terms of the MIT license. Please check [License](https://github.com/Himanshuu-Gupta/Simplii/blob/main/LICENSE) for more details.
 
-## Chat Channel
-<code><a href="https://discord.gg/twMMQrUuKB" target="_blank"><img height="100" width="250" src="https://user-images.githubusercontent.com/42767118/135394825-26dee6db-7a64-4e3f-902a-1e35abd4cf0c.png"></a></code>
-
 ## Phase 1:
 
 - [x] Create database ER diagram
@@ -155,6 +152,7 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 - [x] Create employee table
 - [x] Create task-employee table 
 - [x] Add description attribute to task table
+- [x] update the frontend page to show the new attribute "description" 
 
 
 ### Future Enhancements:
