@@ -9,9 +9,9 @@ authors = [
 license = "MIT"
 readme = "README.md"
 python = "^3.6"
-homepage = "https://github.com/Himanshuu-Gupta/Simplii"
-repository = "https://github.com/Himanshuu-Gupta/Simplii"
-documentation = "https://github.com/Himanshuu-Gupta/Simplii"
+homepage = "https://github.com/jiangyy12/Simplii"
+repository = "https://github.com/jiangyy12/Simplii"
+documentation = "https://github.com/jiangyy12/Simplii"
 
 classifiers = [
     "Topic :: Software Development"
