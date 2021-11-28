@@ -30,7 +30,7 @@ This project has the same structure as Project1,2.
 |.5|other automated analysis tools  |https://codeclimate.com/github/jiangyy12/Simplii|
 |.5|test cases:.a large proportion of the issues related to handling failing cases. | if a test case fails, open an issue and fix it|
 |.5|test cases are routinely executed | https://app.travis-ci.com/github/jiangyy12/Simplii |
-|1|Documentation describing how this version improves on the older version|in reademe|
+|1|Documentation describing how this version improves on the older version|https://github.com/jiangyy12/Simplii/blob/main/docs/Phase%203/ImprovementsDoc.md|
 |3|This version is a little(1), some(2), much(3) improved on the last version.|Tutor's assessment.|
 |16| Total||
 
