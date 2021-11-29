@@ -156,6 +156,9 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 - [x] Add description attribute to task table
 - [x] Update the frontend page to show the new attribute "description" 
 - [x] Add project management
+- [x] Add employee management page, which can show all the employees and add a new one
+- [x] Add task-employee arrangement
+- [x] Add auto code coverage evaluation 
 
 ### Future Enhancements:
 
