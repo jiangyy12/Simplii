@@ -151,9 +151,11 @@ This project is licensed under the terms of the MIT license. Please check [Licen
 - [x] Update database ER diagram
 - [x] Create employee table
 - [x] Create task-employee table 
+- [x] Create project table  
+- [x] Create task-project table
 - [x] Add description attribute to task table
-- [x] update the frontend page to show the new attribute "description" 
-- [x] add project management
+- [x] Update the frontend page to show the new attribute "description" 
+- [x] Add project management
 
 ### Future Enhancements:
 
