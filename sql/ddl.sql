@@ -81,7 +81,7 @@ DROP TABLE IF EXISTS `Tasks`;
 CREATE TABLE `Tasks` (
   `TaskID` varchar(45) NOT NULL,
   `UserID` int DEFAULT NULL,
-  `Taskname` varchar(45) NOT NULL,
+  `TaskName` varchar(45) NOT NULL,
   `Status` varchar(45) DEFAULT NULL,
   `Startdate` datetime DEFAULT NULL,
   `Duedate` datetime DEFAULT NULL,
@@ -174,6 +174,10 @@ INSERT INTO `Employee` VALUES (1, 'Das', '28', 'Java', '919919919', 'Software En
 INSERT INTO `Employee` VALUES (2, 'Bob', '30', 'Python', '919919999', 'Production Manager');
 COMMIT;
 
+--
+-- Table structure for table `Task_Employee`
+--
+
 DROP TABLE IF EXISTS `Task_Employee`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
@@ -187,7 +191,9 @@ BEGIN;
 INSERT INTO `Task_Employee` VALUES (1, 1);
 COMMIT;
 
-
+--
+-- Table structure for table `Project`
+--
 
 DROP TABLE IF EXISTS `Project`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
@@ -203,6 +209,11 @@ CREATE TABLE `Project` (
 BEGIN;
 INSERT INTO `Project` VALUES (1, 'TeamFormation', 'Match team and proj', 'Python, JS');
 COMMIT;
+
+
+--
+-- Table structure for table `Task_Project`
+--
 
 DROP TABLE IF EXISTS `Task_Project`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
