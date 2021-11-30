@@ -1,9 +1,9 @@
+# Simplii
+
 ## Project3 video
 This video compare the original project with the new one.
 
 https://youtu.be/2nvcmtN1Vqo
-
-# Simplii
 
 *Make Multitasking Manageable!*
 #
