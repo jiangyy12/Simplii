@@ -1,4 +1,10 @@
+## Project3 video
+This video compare the original project with the new one.
+
+https://youtu.be/2nvcmtN1Vqo
+
 # Simplii
+
 *Make Multitasking Manageable!*
 #
 **Task Scheduler Web App**
@@ -23,11 +29,6 @@ Ever felt that your day went by not as productively as you'd wish? We hear you! 
 ## Visual Walkthrough:
 
 https://user-images.githubusercontent.com/18304940/140261087-6491c967-fe11-469f-9718-ca241b690bce.mp4
-
-### Project3 video
-This video compare the original project with the new one.
-
-https://youtu.be/2nvcmtN1Vqo
 
 
 ## Built with:
