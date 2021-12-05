@@ -9,9 +9,8 @@ This video compares the original project with the new one.  https://youtu.be/2nv
 
 [![DOI](https://zenodo.org/badge/427757498.svg)](https://zenodo.org/badge/latestdoi/427757498)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub Release](https://img.shields.io/github/release/Himanshuu-Gupta/Simplii)](https://github.com/Himanshuu-Gupta/Simplii/releases/tag/simplii)
-![GitHub issues](https://img.shields.io/github/issues-raw/Himanshuu-Gupta/Simplii)
-![Github closes issues](https://img.shields.io/github/issues-closed-raw/Himanshuu-Gupta/Simplii)
+![GitHub issues](https://img.shields.io/badge/issues-0%20open-green)
+![GitHub issues](https://img.shields.io/badge/closed%20issue-19-brightgreen)
 ![Github pull requests](https://img.shields.io/github/issues-pr/Himanshuu-Gupta/Simplii)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Build Status](https://app.travis-ci.com/jiangyy12/Simplii.svg?branch=main)](https://app.travis-ci.com/jiangyy12/Simplii)
