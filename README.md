@@ -14,7 +14,7 @@ This video compares the original project with the new one.  https://youtu.be/2nv
 ![Github closes issues](https://img.shields.io/github/issues-closed-raw/Himanshuu-Gupta/Simplii)
 ![Github pull requests](https://img.shields.io/github/issues-pr/Himanshuu-Gupta/Simplii)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-[![Build Status](https://app.travis-ci.com/Himanshuu-Gupta/Simplii.svg?branch=main)](https://app.travis-ci.com/Himanshuu-Gupta/Simplii)
+[![Build Status](https://app.travis-ci.com/jiangyy12/Simplii.svg?branch=main)](https://app.travis-ci.com/jiangyy12/Simplii)
 [![codecov](https://codecov.io/gh/jiangyy12/Simplii/branch/main/graph/badge.svg?token=NGV3o7V64c)](https://codecov.io/gh/jiangyy12/Simplii)
 [![Codecov](https://github.com/jiangyy12/Simplii/actions/workflows/codecov.yml/badge.svg)](https://github.com/jiangyy12/Simplii/actions/workflows/codecov.yml)
 
